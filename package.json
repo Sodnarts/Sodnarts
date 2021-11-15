@@ -1,0 +1,30 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": "last 10 versions",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "concat-dev:css": "concat -o css/style.css css/icon-font.css css/style.css",
+    "dev": "live-server & npm run watch:sass && npm run concat-dev:css",
+
+    "compile:sass": "node-sass sass/main.scss css/build/style.comp.css",
+    "concat:css": "concat -o css/build/style.concat.css css/icon-font.css css/build/style.comp.css",
+    "prefix:css": "postcss css/build/style.concat.css --use autoprefixer -o css/build/style.prefix.css",
+    "compress:css": "node-sass css/build/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
+    "build-temp:css": "npm run compile:sass && npm run concat:css && npm run prefix:css && npm run compress:css"
+  },
+  "author": "Glenn",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {}
+}
