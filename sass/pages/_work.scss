@@ -2,89 +2,47 @@
     position: relative;
     width: 100%;
     background-color: $color-grey-dark-3;
-    height: 400rem; // TODO REMOVE
-    padding-top: 12rem;
+    padding: 6rem 0;
 
-    &__card {
-        display: flex;
-        justify-content: center;
+    &__title {
+        font-size: 4.8rem;
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 6.4rem;
+        font-family: 'Poiret One';
 
-        &--img {
-            width: 100%;
-            height: 100%;
+        @include respond(phone) {
+            font-size: 3.6rem;
+            margin-top: 2rem;
         }
+    }
 
-        &--details {
-            z-index: 100;
-            opacity: 1;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            transition: 0.5s;
-            align-items: center;
+    &__checkbox {
+        display: none;
+    }
 
-            & h2 {
-                color: #eee;
-                border-radius: 4rem;
-                padding: 0.5rem 2rem;
-                font-size: 3rem;
-                font-weight: 300;
-                transition: 0.8s ease-out;
-                transition-delay: 0s;
-                transform: translateY(27rem);
-            }
+    &__checkbox-1:checked ~ &__details-1 {
+        visibility: visible;
+        opacity: 1;
+    }
 
-            &-tech {
-                display: flex;
-            }
-            & p {
-                color: #eee;
-                border-radius: 0.5rem;
-                font-weight: 300;
-                margin: 0 1rem;
-                padding: 0rem 1rem;
-                background: #333;
-                font-size: 1.6rem;
-                transition: 0.8s ease-out;
-                transform: translateY(22rem);
-                transition-delay: 0s;
-            }
+    &__checkbox-2:checked ~ &__details-2 {
+        visibility: visible;
+        opacity: 1;
+    }
 
-            &-btn-container {
-                background: #222;
-                transition: 0.8s ease-out;
-                transform: translateY(20rem);
-                transition-delay: 0s;
-            }
-        }
+    &__checkbox-3:checked ~ &__details-3 {
+        visibility: visible;
+        opacity: 1;
+    }
 
-        .card:hover &--details {
-            opacity: 1;
+    &__checkbox-4:checked ~ &__details-4 {
+        visibility: visible;
+        opacity: 1;
+    }
 
-            & h2 {
-                transform: translateY(-12rem);
-                transition-delay: 0.8s;
-            }
-
-            & p:nth-child(1) {
-                transform: translateY(-5rem);
-                transition-delay: 1.2s;
-            }
-
-            & p:nth-child(2) {
-                transform: translateY(-5rem);
-                transition-delay: 1.5s;
-            }
-
-            & p:nth-child(3) {
-                transform: translateY(-5rem);
-                transition-delay: 1.8s;
-            }
-
-            &-btn-container {
-                transform: translateY(11rem);
-                transition-delay: 2.2s;
-            }
-        }
+    &__checkbox-5:checked ~ &__details-5 {
+        visibility: visible;
+        opacity: 1;
     }
 }

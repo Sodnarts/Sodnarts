@@ -6,10 +6,21 @@
 @import 'base/typography';
 @import 'base/utilities';
 
-@import 'components/card';
+@import 'components/common/animated_button';
+@import 'components/common/card';
+@import 'components/common/typewriter';
+@import 'components/home/avatar';
+@import 'components/home/avatar_icons';
+@import 'components/home/description';
 
-@import 'layouts/header';
+@import 'components/work/details/details';
+@import 'components/work/details/details_main';
+@import 'components/work/details/details_techs';
+@import 'components/work/work_card';
+
 @import 'layouts/grid';
+@import 'layouts/header';
 
+@import 'pages/about';
 @import 'pages/home';
 @import 'pages/work';

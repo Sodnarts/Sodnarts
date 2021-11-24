@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira Mono:100,200,300,400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">    <title>Home Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Home Page</title>
 </head>
 
 <body> 
     <header class="header">
-        <a href="#home" class="header--btn header--selected">Home</a>
-        <a href="#work" class="header--btn">Work</a href="#work">
-        <a href="#" class="header--btn">Contact</a>
-        <a href="#" class="header--btn">About</a>
+        <a href="#" class="animated-btn animated-btn--selected">Home</a>
+        <a href="#work" class="animated-btn">Work</a>
+        <a href="#about" class="animated-btn">About</a>
+        <a href="#contact" class="animated-btn">Contact</a>
     </header>
     <section id="home" class="overview">
         <div class="overview__card">
@@ -36,13 +38,15 @@
             </div>
         </div>
         <div class="overview__description">
+            <h1 class="overview__description--title typewriter">Hello! My name is Glenn.</h1>
             <h3 class="overview__description--text">
-                Hi! I am a developer from Norway. My interests lie within the space of web development, where I enjoy working with technologies such as React, Sass, TypeScript and more.
-                Occasionally, you may find me working on APIs made with Node.js and Express.
+                I am a developer from Norway. My interests lie within the space of web development, where I enjoy working with technologies such as React, Sass, TypeScript and more.
+                Occasionally, you may find me creating APIs with Node.js and Express.
             </h3>
         </div>
     </section>
     <section id="work" class="work">
+        <h2 class="work__title">Projects</h2>
         <div class="work__card row">
             <div class="col-1-of-2">
                 <div class="card">
@@ -57,7 +61,9 @@
                                 <p>Sass</p>
                                 <p>CSS</p>
                             </div>
-                            <div class="work__card--details-btn-container"><a class="header--btn work__card--details-btn">View Details</a></div>
+                            <label for="toggle1" class="work__card--details-btn-container">
+                                <a class="animated-btn work__card--details-btn">View Details</a>
+                            </label>           
                         </div>
                     </div>
                 </div>
@@ -75,7 +81,9 @@
                                 <p>TypeScript</p>
                                 <p>Material-UI</p>
                             </div>
-                            <div class="work__card--details-btn-container"><a class="header--btn work__card--details-btn">View Details</a></div>
+                            <label for="toggle2"  class="work__card--details-btn-container">
+                                <a class="animated-btn work__card--details-btn">View Details</a>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -95,8 +103,9 @@
                                 <p>TypeScript</p>
                                 <p>Material-UI</p>
                             </div>
-                            <div class="work__card--details-btn-container"><a class="header--btn work__card--details-btn">View Details</a></div>
-                        </div>
+                            <label for="toggle3"  class="work__card--details-btn-container">
+                                <a class="animated-btn work__card--details-btn">View Details</a>
+                            </label>                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +122,9 @@
                                 <p>TypeScript</p>
                                 <p>Material-UI</p>
                             </div>
-                            <div class="work__card--details-btn-container"><a class="header--btn work__card--details-btn">View Details</a></div>
+                            <label for="toggle4"  class="work__card--details-btn-container">
+                                <a class="animated-btn work__card--details-btn">View Details</a>
+                            </label>                        
                         </div>
                     </div>
                 </div>
@@ -123,41 +134,193 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/recipes-image.png">
+                        <img class="work__card--img" src="img/server-image.jpeg">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
-                            <h2>Server</h2>
+                            <h2>Node.js Server</h2>
                             <div class="work__card--details-tech">
                                 <p>Node.js</p>
                                 <p>JavaScript</p>
                                 <p>Express</p>
                             </div>
-                            <div class="work__card--details-btn-container"><a class="header--btn work__card--details-btn">View Details</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/e-commerce-image.png">
-                    </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                        <div class="work__card--details">
-                            <h2>E-Commerce</h2>
-                            <div class="work__card--details-tech">
-                                <p>React</p>
-                                <p>TypeScript</p>
-                                <p>CSS</p>
-                            </div>
-                            <div class="work__card--details-btn-container"><a class="header--btn work__card--details-btn">View Details</a></div>
+                            <label for="toggle5"  class="work__card--details-btn-container">
+                                <a class="animated-btn work__card--details-btn">View Details</a>
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <input type="checkbox" class="work__checkbox work__checkbox-1" id="toggle1">
+        <input type="checkbox" class="work__checkbox work__checkbox-2" id="toggle2">
+        <input type="checkbox" class="work__checkbox work__checkbox-3" id="toggle3">
+        <input type="checkbox" class="work__checkbox work__checkbox-4" id="toggle4">
+        <input type="checkbox" class="work__checkbox work__checkbox-5" id="toggle5">
+        <div class="work__details work__details-1">
+            <label for="toggle1" class="work__details--background"></label>
+            <div class="work__details--container">
+                <label for="toggle1" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <div class="work__details--main">
+                    <h2>Portfolio</h2>
+
+                    <p>
+                        Portfolio
+                    </p>
+                    <ul>
+                        <h3>Features</h3>
+                        <li>
+                        </li> 
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="work__details--techs">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work__details work__details-2">
+            <label for="toggle2" class="work__details--background"></label>
+            <div class="work__details--container">
+                <label for="toggle2" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <div class="work__details--main">
+                    <h2>Cookbook</h2>
+
+                    <p>
+                        Description
+                    </p>
+                    <ul>
+                        <h3>Features</h3>
+                        <li>
+                        </li> 
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="work__details--techs">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Material UI</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work__details work__details-3">
+            <label for="toggle3" class="work__details--background"></label>
+            <div class="work__details--container">
+                <label for="toggle3" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <div class="work__details--main">
+                    <h2>League-Watcher</h2>
+
+                    <p>
+                        Description
+                    </p>
+                    <ul>
+                        <h3>Features</h3>
+                        <li>
+                        </li> 
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="work__details--techs">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Material-UI</li>
+                        <li>Riot Games' API</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work__details work__details-4">
+            <label for="toggle4" class="work__details--background"></label>
+            <div class="work__details--container">
+                <label for="toggle4" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <div class="work__details--main">
+                    <h2>Internationalization</h2>
+
+                    <p>
+                        Description
+                    </p>
+                    <ul>
+                        <h3>Features</h3>
+                        <li>
+                        </li> 
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="work__details--techs">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Material-UI</li>
+                        <li>Google OAuth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="work__details work__details-5">
+            <label for="toggle5" class="work__details--background"></label>
+            <div class="work__details--container">
+                <label for="toggle5" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <div class="work__details--main">
+                    <h2>Node.js Server</h2>
+
+                    <p>
+                        This project came to life when I first needed a simple <span>Back-End</span> for one of my first ever websites. Due to my interest in <span>Web Development</span>, I decided to create a <span>Node.js</span> and <span>Express</span> server since I could utilize my <span>JavaScript</span> knowledge. 
+                        <br><br>
+                        Connection to a <span>MongoDB Atlas Database</span> is done through utilising <span>Mongoose</span>. 
+                        <br>
+                        Both <span>Stripe</span> and <span>Sendgrid</span> has been integrated into the server, giving it the ability to handle payments and send out e-mails respectively.
+                        The server has evolved over the past few years and is now handling requests from most of my websites. Each website has a different set of API routes set up for it, in order to handle the <span>Create</span>, <span>Read</span>, <span>Update</span> and <span>Delete</span> operations.
+                        <br><br>
+                        Any code-changes is automatically deployed to production, through <span>Heroku’s</span> CI / CD.                        
+                        <br><br>
+                    </p>
+                    <ul>
+                        <h3>Features</h3>
+                        <li>
+                            Google OAuth authentication
+                        </li> 
+                        <li>
+                            Handling CORS through a whitelist of urls
+                        </li>
+                        <li>
+                            Automatic Deployment
+                        </li>
+                        <li>
+                            Sending E-Mails
+                        </li>
+                        <li>
+                            Handling Payments
+                        </li>
+                    </ul>
+                </div>
+                <div class="work__details--techs">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Mongoose</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
     </section>
 </body>
-
 </html>

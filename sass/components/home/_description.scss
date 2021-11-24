@@ -1,0 +1,45 @@
+.overview {
+    &__description {
+        @include absoluteCenter;
+        left: 68%;
+        width: 40%;
+
+        &--title {
+            line-height: 5rem;
+        }
+
+        &--text {
+            font-size: 3.2rem;
+            line-height: 5rem;
+            font-weight: 100;
+            transition: 0.5s;
+            text-align: justify;
+            opacity: 0;
+            transform: translateY(3rem);
+            animation: fade-in-up 1.5s ease $typewriter-speed + 4s forwards;
+
+            &:hover {
+                transform: translate(-1rem, -1rem) scale(1.05);
+
+                @include respond(phone) {
+                    transform: none;
+                }
+            }
+
+            @include respond(tab-port) {
+                font-size: 2.4rem;
+            }
+
+            @include respond(phone) {
+                font-size: 2.2rem;
+            }
+        }
+
+        @include respond(tab-land) {
+            left: 70%;
+        }
+        @include respond(tab-port) {
+            width: 70%;
+        }
+    }
+}

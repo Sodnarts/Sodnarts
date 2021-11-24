@@ -1,0 +1,185 @@
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink-old {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes blink {
+    4% {
+        background: #eee;
+    }
+    5% {
+        background: transparent;
+    }
+
+    9% {
+        background: transparent;
+    }
+    10% {
+        background: #eee;
+    }
+    14% {
+        background: #eee;
+    }
+    15% {
+        background: transparent;
+    }
+
+    19% {
+        background: transparent;
+    }
+    20% {
+        background: #eee;
+    }
+
+    24% {
+        background: #eee;
+    }
+    25% {
+        background: transparent;
+    }
+
+    29% {
+        background: transparent;
+    }
+    30% {
+        background: #eee;
+    }
+
+    34% {
+        background: #eee;
+    }
+    35% {
+        background: transparent;
+    }
+
+    39% {
+        background: transparent;
+    }
+    40% {
+        background: #eee;
+    }
+
+    44% {
+        background: #eee;
+    }
+    45% {
+        background: transparent;
+    }
+
+    49% {
+        background: transparent;
+    }
+    50% {
+        background: #eee;
+    }
+
+    54% {
+        background: #eee;
+    }
+    55% {
+        background: transparent;
+    }
+
+    59% {
+        background: transparent;
+    }
+    60% {
+        background: #eee;
+    }
+
+    64% {
+        background: #eee;
+    }
+    65% {
+        background: transparent;
+    }
+
+    69% {
+        background: transparent;
+    }
+    70% {
+        background: #eee;
+    }
+    74% {
+        background: #eee;
+    }
+    75% {
+        background: transparent;
+    }
+
+    79% {
+        background: transparent;
+    }
+    80% {
+        background: #eee;
+    }
+
+    84% {
+        background: #eee;
+    }
+    85% {
+        background: transparent;
+    }
+
+    89% {
+        background: transparent;
+    }
+    90% {
+        background: #eee;
+    }
+    94% {
+        background: #eee;
+    }
+    to  {
+        background: green;
+    }
+}
+@keyframes slide-down {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down-up {
+    80% {
+        left: 50%;
+        transform: translate(-50%, 2rem);
+    }
+    to {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes slide-to-right {
+    80% {
+        left: 4rem;
+        transform: translateX(0);
+    }
+    to {
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-absolute-center {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}

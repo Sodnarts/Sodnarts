@@ -1,0 +1,82 @@
+.work__details {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+    &--background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #00000099;
+        z-index: 100;
+    }
+
+    &--container {
+        @include absoluteCenter;
+        position: fixed;
+        top: calc(50% + 4rem);
+        z-index: 1100;
+        background-color: #222;
+        border: 2px solid #666;
+        border-radius: 2rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.35);
+        width: 70vw;
+        height: 81.8vh;
+        overflow-y: auto;
+
+        @include respond(phone) {
+            width: 90vw;
+        }
+    }
+
+    &--close-icon {
+        position: relative;
+
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: #eee;
+            display: inline-block;
+            content: '';
+            position: absolute;
+            transition: all 0.3s;
+        }
+
+        &::before {
+            top: 1rem;
+            left: 0.1rem;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            top: 1rem;
+            left: 0rem;
+            transform: rotate(135deg);
+        }
+    }
+
+    &--close {
+        width: 2.6rem;
+        height: 2.6rem;
+        right: 2rem;
+        top: 2rem;
+        position: absolute;
+        background: transparent;
+        z-index: 2000;
+
+        &:hover &-icon::after {
+            top: 1rem;
+            left: 0.1rem;
+            transform: rotate(45deg);
+        }
+        &:hover &-icon::before {
+            top: 1rem;
+            left: 0rem;
+            transform: rotate(135deg);
+        }
+    }
+}

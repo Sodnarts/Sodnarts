@@ -1,0 +1,139 @@
+.overview {
+    &__card {
+        &--icons {
+            @include absoluteCenter;
+            display: flex;
+            z-index: 3;
+            margin: 0;
+            padding: 0;
+
+            & li {
+                list-style: none;
+            }
+
+            & li a {
+                position: relative;
+                display: block;
+                width: 5rem;
+                height: 5rem;
+                text-align: center;
+                background: $color-white;
+                margin: 0 0.5rem;
+                border-radius: 50%;
+                transition: 0.5s;
+                transform: translateY(20rem);
+                opacity: 0;
+            }
+        }
+
+        &--icons li a .fab {
+            transition: 0.5s;
+            font-size: 2.4rem;
+            line-height: 5rem;
+            color: $color-grey-dark-3;
+        }
+
+        &--icons li:nth-child(1) a {
+            &:hover .fab {
+                transform: scale(1.3);
+                color: $color-facebook;
+            }
+            & .fab {
+                @include respond(tab-port) {
+                    color: $color-facebook;
+                }
+            }
+        }
+        &--icons li:nth-child(2) a {
+            &:hover .fab {
+                transform: scale(1.3);
+                color: $color-instagram;
+            }
+            & .fab {
+                @include respond(tab-port) {
+                    color: $color-instagram;
+                }
+            }
+        }
+        &--icons li:nth-child(3) a {
+            &:hover .fab {
+                transform: scale(1.3);
+                color: $color-linkedin;
+            }
+            & .fab {
+                @include respond(tab-port) {
+                    color: $color-linkedin;
+                }
+            }
+        }
+        &--icons li:nth-child(4) a {
+            &:hover .fab {
+                transform: scale(1.3);
+                color: $color-github;
+            }
+            & .fab {
+                @include respond(tab-port) {
+                    color: $color-github;
+                }
+            }
+        }
+        &--icons li:nth-child(5) a {
+            &:hover .fab {
+                transform: scale(1.3);
+                color: $color-twitter;
+            }
+            & .fab {
+                @include respond(tab-port) {
+                    color: $color-twitter;
+                }
+            }
+        }
+
+        &--icons {
+            @include absoluteCenter;
+            display: flex;
+            z-index: 3;
+            margin: 0;
+            padding: 0;
+
+            & li {
+                list-style: none;
+            }
+
+            & li a {
+                position: relative;
+                display: block;
+                width: 5rem;
+                height: 5rem;
+                text-align: center;
+                background: $color-white;
+                margin: 0 0.5rem;
+                border-radius: 50%;
+                transition: 0.5s;
+                transform: translateY(20rem);
+                opacity: 0;
+            }
+        }
+
+        &:hover &--icons li a {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        &:hover &--icons li:nth-child(1) a {
+            transition-delay: 0s;
+        }
+        &:hover &--icons li:nth-child(2) a {
+            transition-delay: 0.2s;
+        }
+        &:hover &--icons li:nth-child(3) a {
+            transition-delay: 0.4s;
+        }
+        &:hover &--icons li:nth-child(4) a {
+            transition-delay: 0.6s;
+        }
+        &:hover &--icons li:nth-child(5) a {
+            transition-delay: 0.8s;
+        }
+    }
+}

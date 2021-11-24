@@ -1,0 +1,130 @@
+.work__card {
+    display: flex;
+    justify-content: center;
+
+    &--img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &--details {
+        z-index: 100;
+        opacity: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+        align-items: center;
+
+        & h2 {
+            color: #eee;
+            border-radius: 4rem;
+            text-align: center;
+            padding: 0.5rem 2rem;
+            font-size: 3rem;
+            font-weight: 300;
+            transition: 0.8s ease-out;
+            transition-delay: 0s;
+            transform: translateY(27rem);
+
+            @include respond(tab-port) {
+                transform: translateY(-0.5rem);
+            }
+        }
+
+        &-tech {
+            display: flex;
+        }
+        & p {
+            color: #eee;
+            border-radius: 0.5rem;
+            font-weight: 300;
+            margin: 0 1rem;
+            padding: 0rem 1rem;
+            background: #333;
+            font-size: 1.6rem;
+            transition: 0.8s ease-out;
+            transform: translateY(22rem);
+            transition-delay: 0s;
+        }
+
+        &-btn-container {
+            background: #222;
+            transition: 0.8s ease-out;
+            transform: translateY(20rem);
+            transition-delay: 0s;
+
+            @include respond(tab-port) {
+                transform: translateY(-1.8rem);
+            }
+        }
+        &-btn {
+            @include respond(tab-port) {
+                background: linear-gradient(to right, $header-button-color-background, #aaa);
+                border-radius: 1rem;
+                color: $header-button-color-text;
+
+                &::before,
+                &::after {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .card:hover &--details {
+        opacity: 1;
+
+        & h2 {
+            transform: translateY(-12rem);
+            transition-delay: 0.8s;
+
+            @include respond(tab-port) {
+                transform: translateY(-0.5rem);
+            }
+        }
+
+        & p:nth-child(1) {
+            transform: translateY(-5rem);
+            transition-delay: 1.2s;
+
+            @include respond(tab-port) {
+                transform: translateY(20rem);
+            }
+        }
+
+        & p:nth-child(2) {
+            transform: translateY(-5rem);
+            transition-delay: 1.5s;
+
+            @include respond(tab-port) {
+                transform: translateY(20rem);
+            }
+        }
+
+        & p:nth-child(3) {
+            transform: translateY(-5rem);
+            transition-delay: 1.8s;
+
+            @include respond(tab-port) {
+                transform: translateY(20rem);
+            }
+        }
+
+        &-btn-container {
+            transform: translateY(11rem);
+            transition-delay: 2.2s;
+
+            @include respond(tab-port) {
+                transform: translateY(-1.5rem);
+            }
+        }
+
+        &-btn {
+            @include respond(tab-port) {
+                background: linear-gradient(to right, $header-button-color-background, #aaa);
+                color: $header-button-color-text;
+            }
+        }
+    }
+}

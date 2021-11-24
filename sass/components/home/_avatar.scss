@@ -1,0 +1,81 @@
+.overview {
+    &__card {
+        @include absoluteCenter;
+        left: 25%;
+        width: 40rem; //30rem; original
+        height: 45rem; //34rem; original
+        background: $color-black;
+        border-radius: 1.5rem;
+        overflow: hidden;
+        box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.9);
+        transform: translate(-60%, -50%);
+        opacity: 0;
+        animation: fade-in-absolute-center 2s ease $typewriter-speed + 3.5s forwards;
+
+        &--avatar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            z-index: 2;
+            background: $color-black;
+
+            &-img {
+                width: 40rem; //30rem; original
+                height: 45rem; //34rem; original
+                transition: 0.5s;
+
+                @include respond(phone) {
+                    width: 30rem;
+                    height: 34rem;
+                }
+            }
+        }
+
+        &:hover &--avatar {
+            transform: translateY(-10rem);
+        }
+
+        &:hover &--avatar img {
+            opacity: 0.5;
+        }
+
+        &--details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $color-white;
+            z-index: 1;
+            width: 100%;
+            height: 10rem;
+            box-sizing: border-box;
+            padding: 1rem;
+
+            & h2 {
+                margin: 1rem 0 0;
+                padding: 0;
+                text-align: center;
+                color: $color-grey-dark-3;
+                font-size: 2rem;
+                font-family: sans-serif;
+
+                & span {
+                    color: #bbb;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        @include respond(tab-port) {
+            transform: translate(-50%, -60%);
+            animation: slide-down 2s ease $typewriter-speed + 3.5s forwards;
+        }
+
+        @include respond(phone) {
+            width: 30rem;
+            height: 34rem;
+        }
+    }
+}
