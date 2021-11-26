@@ -34,11 +34,13 @@
             }
         }
 
-        &:hover &--avatar {
+        &:hover &--avatar,
+        &:focus-within &--avatar {
             transform: translateY(-10rem);
         }
 
-        &:hover &--avatar img {
+        &:hover &--avatar img,
+        &:focus-within &--avatar img {
             opacity: 0.5;
         }
 

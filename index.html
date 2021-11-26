@@ -51,15 +51,15 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/portfoilo-image.png">
+                        <img class="work__card--img" src="img/portfolio-image.png">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
                             <h2>Portfolio</h2>
                             <div class="work__card--details-tech">
                                 <p>HTML</p>
-                                <p>Sass</p>
-                                <p>CSS</p>
+                                <p>SCSS</p>
+                                <p>Firebase</p>
                             </div>
                             <label for="toggle1" class="work__card--details-btn-container">
                                 <a class="animated-btn work__card--details-btn">View Details</a>
@@ -163,24 +163,31 @@
                 <label for="toggle1" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
                 <div class="work__details--main">
                     <h2>Portfolio</h2>
-
                     <p>
-                        Portfolio
+                        This portfolio was developed using only <span>HTML</span> and <span>SCSS</span>. I chose this approach, since I wanted to explore 
+                        <span>CSS</span> more thoroughly. It allowed me to realise what I could achieve with <span>CSS</span>. During the development, 
+                        I focused a lot on making sure the webpage was <span>responsive</span> and working on all devices. 
+                        <br><br>
+                        The webpage is hosted using <span>Firebase Hosting</span>. Setting up <span>Github Actions</span> allows me to automatically deploy to <span>Firebase</span> as well.
+
+                        <br><br>
+                        Feel free to view the <a class="inline-link" href="https://github.com/Sodnarts/Sodnarts" target="_blank">Github</a>.
                     </p>
                     <ul>
                         <h3>Features</h3>
-                        <li>
-                        </li> 
-                        <li>
-                        </li>
+                        <li>Automatic Deployment</li>
+                        <li>Hosted on Firebase</li>
+                        <li>No JavaScript or TypeScript</li>
+                        <li>Sending E-Mails through contact form</li>
                     </ul>
                 </div>
                 <div class="work__details--techs">
                     <h3>Technologies</h3>
                     <ul>
                         <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Sass</li>
+                        <li>SCSS</li>
+                        <li>Firebase</li>
+                        <li>Github Actions</li>
                     </ul>
                 </div>
             </div>
@@ -193,22 +200,33 @@
                     <h2>Cookbook</h2>
 
                     <p>
-                        Description
+                        After being tired of always having to search for recipes, or be given recipes with non-specific measurements, I decided to
+                        create a website to make things easier for myself. The most important functionality I required was the ability to do basic <span>CRUD</span> operations.
+                        Along with the <span>CRUD</span> operations, I did also set a few more requirements for the website, such as: predefined measurements, ability to section up the instructions,
+                        and being able to upload a photograph of the prepared item.
+                        <br><br>
+                        The website was developed using <span>React</span>, <span>Redux</span> and <span>TypeScript</span>, along with using <span>Material UI</span> as a component library. It also has a <span>Back-End</span>
+                        developed in <span>Node.js</span> and <span>Express</span> that is using a <span>MongoDB</span> to store the recipes.
+                        When it comes to <span>responsive design</span>, the website works on both <span>desktops</span> and <span>mobile devices</span>. This was particularly important, since my primary tool for reading recipes is a phone.
+                        <br><br>
+                        Feel free to view the <a class="inline-link" href="https://cookbook.sodnarts.com" target="_blank">Website</a> or the <a class="inline-link" href="https://github.com/Sodnarts/Cookbook" target="_blank">Github</a>.
                     </p>
                     <ul>
                         <h3>Features</h3>
-                        <li>
-                        </li> 
-                        <li>
-                        </li>
+                        <li>Create, Read, Update and Delete Recipes</li> 
+                        <li>Ability to add both ingredients and instructions</li>
+                        <li>Recipes are categorized and filterable</li>
+                        <li>Includes a photograph of the prepared item</li>
                     </ul>
                 </div>
                 <div class="work__details--techs">
                     <h3>Technologies</h3>
                     <ul>
                         <li>React</li>
+                        <li>Redux</li>
                         <li>TypeScript</li>
                         <li>Material UI</li>
+                        <li>MERN Stack</li>
                     </ul>
                 </div>
             </div>
@@ -221,14 +239,22 @@
                     <h2>League-Watcher</h2>
 
                     <p>
-                        Description
+                        League Watcher was developed due to me wanting to play around with <span>Riot Games' API</span>. Whilst playing around with the <span>API</span> I thought it might be a good idea to
+                        try to use it to develop something useful. The result was League Watcher. The main purpose of the application is to find and view your own, or anyone else's match history.
+                        In order for the match history to have any value it also has to include detailed specifics about each match, not only whether it was a win or a loss.
+                        <br><br>
+                        In order to achieve this, I implemented an <span>integration</span> layer that would call all the necessary <span>endpoints</span> on <span>Riot Games' API</span>, in order to <span>transform</span> the data into a usable <span>format</span>,
+                        based on the given Summoner Name. This is necessary due to the required data being given by calling a multitude of <span>endpoints</span>.
+                        The <span>website</span> itself was developed using <span>React</span>, <span>Redux</span>, <span>TypeScript</span> and <span>Material-UI</span>. 
+                        <br><br>
+                        Feel free to view the <a class="inline-link" href="https://league-watcher.sodnarts.com" target="_blank">Website</a> or the <a class="inline-link" href="https://github.com/Sodnarts/League-Watcher" target="_blank">Github</a>.
                     </p>
                     <ul>
                         <h3>Features</h3>
-                        <li>
-                        </li> 
-                        <li>
-                        </li>
+                        <li>View any player's match history</li> 
+                        <li>Save your most frequent searches as favourites</li>
+                        <li>Get detailed information about each match</li>
+                        <li>Integration towards third-party API</li>
                     </ul>
                 </div>
                 <div class="work__details--techs">
@@ -238,6 +264,7 @@
                         <li>TypeScript</li>
                         <li>Material-UI</li>
                         <li>Riot Games' API</li>
+                        <li>Node.js</li>
                     </ul>
                 </div>
             </div>
@@ -250,14 +277,22 @@
                     <h2>Internationalization</h2>
 
                     <p>
-                        Description
+                        <span>NOTE: This is in progress.</span><br><br>
+                        Handling <span>translations</span> for an app isn't always straight forward. The easiest way is to include the strings within the app itself. Doing it this way however,
+                        will make it difficult to ensure that the strings match on both <span>Android</span> and <span>iOS</span>. One way to ensure that they are always in sync, is to store the
+                        strings outside the app, and instead have the app fetch the strings whenever you update them. 
+                        <br><br>
+                        Internationalization is designed to solve this issue. By storing the original strings, and their translations, we can then export them as <span>.xml (Android)</span> or <span>.string (iOS)</span> files,
+                        which could easily be integrated into the app. This will ensure that the exported strings are always in sync across both <span>Android</span> and <span>iOS</span>. There will also be a <span>CLI</span> that fetches the corresponding files, and adds them to the app correctly.
+                        <br><br>
+                        Feel free to view the <a class="inline-link" href="https://internationalization.web.app" target="_blank">Website</a> or the <a class="inline-link" href="https://github.com/Sodnarts/i18n" target="_blank">Github</a>.
                     </p>
                     <ul>
                         <h3>Features</h3>
-                        <li>
-                        </li> 
-                        <li>
-                        </li>
+                        <li>Translations of strings</li> 
+                        <li>Supports co-operation between people</li>
+                        <li>Restricted access to projects</li>
+                        <li>Exporting translations to .xml (Android) and .strings (iOS)</li>
                     </ul>
                 </div>
                 <div class="work__details--techs">
@@ -283,29 +318,20 @@
                         <br><br>
                         Connection to a <span>MongoDB Atlas Database</span> is done through utilising <span>Mongoose</span>. 
                         <br>
-                        Both <span>Stripe</span> and <span>Sendgrid</span> has been integrated into the server, giving it the ability to handle payments and send out e-mails respectively.
-                        The server has evolved over the past few years and is now handling requests from most of my websites. Each website has a different set of API routes set up for it, in order to handle the <span>Create</span>, <span>Read</span>, <span>Update</span> and <span>Delete</span> operations.
+                        Both <span>Stripe</span> and <span>Sendgrid</span> have been integrated into the server, giving it the ability to handle payments and send out e-mails respectively.
+                        The server has evolved over the past few years and is now acting as the <span>Back-End</span> for most of my websites. Each website has a different set of <span>API routes</span> set up for it, in order to handle the <span>CRUD</span> operations.
                         <br><br>
                         Any code-changes is automatically deployed to production, through <span>Heroku’s</span> CI / CD.                        
                         <br><br>
+                        Feel free to view the <a class="inline-link" href="https://github.com/Sodnarts/Server" target="_blank">Github</a>.
                     </p>
                     <ul>
                         <h3>Features</h3>
-                        <li>
-                            Google OAuth authentication
-                        </li> 
-                        <li>
-                            Handling CORS through a whitelist of urls
-                        </li>
-                        <li>
-                            Automatic Deployment
-                        </li>
-                        <li>
-                            Sending E-Mails
-                        </li>
-                        <li>
-                            Handling Payments
-                        </li>
+                        <li>Google OAuth authentication</li> 
+                        <li>Handling CORS through a whitelist of urls</li>
+                        <li>Automatic Deployment</li>
+                        <li>Sending E-Mails</li>
+                        <li>Handling Payments</li>
                     </ul>
                 </div>
                 <div class="work__details--techs">

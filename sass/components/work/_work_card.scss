@@ -60,7 +60,7 @@
         }
         &-btn {
             @include respond(tab-port) {
-                background: linear-gradient(to right, $header-button-color-background, #aaa);
+                background: $color-grey-light-2;
                 border-radius: 1rem;
                 color: $header-button-color-text;
 
@@ -122,7 +122,7 @@
 
         &-btn {
             @include respond(tab-port) {
-                background: linear-gradient(to right, $header-button-color-background, #aaa);
+                background: $header-button-color-background;
                 color: $header-button-color-text;
             }
         }

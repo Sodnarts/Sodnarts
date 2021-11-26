@@ -42,5 +42,10 @@
         background-color: transparent;
         animation: typewriter $typewriter-speed + 0s steps($typewriter-characters) 1s forwards, blink 8s forwards;
         //animation: typewriter $typewriter-speed steps($typewriter-characters) 1s forwards, blink-old 750ms infinite forwards;
+        @include respond(tab-port) {
+            height: 2.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }

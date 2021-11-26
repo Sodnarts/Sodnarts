@@ -1,0 +1,29 @@
+.inline-link {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+
+    &::before {
+        content: '';
+        width: calc(100% + 4px);
+        position: absolute;
+        height: 2px;
+        background: $color-primary;
+        left: -2px;
+        bottom: -2px;
+        transition: 0.75s;
+        z-index: -1;
+        border-radius: 3px;
+    }
+
+    &:hover {
+        color: #fff;
+    }
+
+    &:hover::before {
+        height: calc(100% + 3px);
+    }
+}
