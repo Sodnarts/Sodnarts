@@ -6,10 +6,13 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/about/information';
+@import 'components/about/tag_cloud';
+
 @import 'components/common/animated_button';
 @import 'components/common/card';
-@import 'components/common/typewriter';
 @import 'components/common/inline_link';
+@import 'components/common/typewriter';
 
 @import 'components/home/avatar';
 @import 'components/home/avatar_icons';
@@ -24,5 +27,6 @@
 @import 'layouts/header';
 
 @import 'pages/about';
+@import 'pages/contact';
 @import 'pages/home';
 @import 'pages/work';

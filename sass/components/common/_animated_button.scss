@@ -30,7 +30,7 @@
     }
 
     &:hover:after {
-        background: linear-gradient(to right, $header-button-color-background, #aaa);
+        background: $header-button-color-background;
         transition-delay: 0.35s;
     }
 

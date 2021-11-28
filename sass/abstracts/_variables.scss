@@ -22,11 +22,15 @@ $color-black: #000;
 $header-button-color-text: $color-grey-dark-3;
 $header-button-color-background: $color-white;
 
+// $header-button-color-text: #222;
+// $header-button-color-background: $color-primary;
+
 $color-facebook: #4267b2;
 $color-twitter: #1da1f2;
 $color-linkedin: #2867b2;
 $color-github: #171b21;
 $color-instagram: #e1306c;
+
 // FONTS
 $default-font-size: 1.6rem;
 
@@ -40,3 +44,6 @@ $gutter-horizontal: 6rem;
 $background-color: #222;
 $typewriter-speed: 6;
 $typewriter-characters: 24;
+
+// Tag cloud
+$tag-amount: 18;

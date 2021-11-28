@@ -21,32 +21,34 @@
         <a href="#about" class="animated-btn">About</a>
         <a href="#contact" class="animated-btn">Contact</a>
     </header>
-    <section id="home" class="overview">
-        <div class="overview__card">
-            <div class="overview__card--avatar">
-                <img class="overview__card--avatar-img" src="img/person-image.jpg" >
+    <main>
+        <section id="home" class="overview">
+            <div class="overview__card">
+                <div class="overview__card--avatar">
+                    <img class="overview__card--avatar-img" src="img/person-image.jpg" >
+                </div>
+                <ul class="overview__card--icons">
+                    <li><a href="https://facebook.com/glennrobert.strandos/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://linkedin.com/in/glenn-robert-strandos-951618156/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Sodnarts" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="overview__card--details">
+                    <h2>Glenn Robert Strandos<br><span>Web Developer</span></h2>
+                </div>
             </div>
-            <ul class="overview__card--icons">
-                <li><a href="https://facebook.com/glennrobert.strandos/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="https://linkedin.com/in/glenn-robert-strandos-951618156/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/Sodnarts" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-            <div class="overview__card--details">
-                <h2>Glenn Robert Strandos<br><span>Web Developer</span></h2>
+            <div class="overview__description">
+                <h1 class="overview__description--title typewriter">Hello! My name is Glenn.</h1>
+                <h3 class="overview__description--text">
+                    I am a developer from Norway. My interests lie within the space of web development, where I enjoy working with technologies such as React, Sass, TypeScript and more.
+                    Occasionally, you may find me creating APIs with Node.js and Express.
+                </h3>
             </div>
-        </div>
-        <div class="overview__description">
-            <h1 class="overview__description--title typewriter">Hello! My name is Glenn.</h1>
-            <h3 class="overview__description--text">
-                I am a developer from Norway. My interests lie within the space of web development, where I enjoy working with technologies such as React, Sass, TypeScript and more.
-                Occasionally, you may find me creating APIs with Node.js and Express.
-            </h3>
-        </div>
-    </section>
+        </section>
+    </main>
     <section id="work" class="work">
-        <h2 class="work__title">Projects</h2>
+        <h2 class="section__title">Projects</h2>
         <div class="work__card row">
             <div class="col-1-of-2">
                 <div class="card">
@@ -347,6 +349,61 @@
         </div>
     </section>
     <section id="about" class="about">
+        <h2 class="section__title">About</h2>
+        <ul class="about__word-cloud">
+            <li><a class="about__word-cloud--word" data-weight="2">Azure Functions</a></li>
+            <li><a class="about__word-cloud--word" data-weight="9">Mongoose</a></li>
+            <li><a class="about__word-cloud--word" data-weight="3">Azure</a></li>
+            <li><a class="about__word-cloud--word" data-weight="17">TypeScript</a></li>
+            <li><a class="about__word-cloud--word" data-weight="12">Node.js</a></li>
+            <li><a class="about__word-cloud--word" data-weight="7">OpenAPI</a></li>
+            <li><a class="about__word-cloud--word" data-weight="11">Redux</a></li>
+            <li><a class="about__word-cloud--word" data-weight="10">MongoDB</a></li>
+            <li><a class="about__word-cloud--word" data-weight="5">YAML</a></li>
+            <li><a class="about__word-cloud--word" data-weight="15">SCSS</a></li>
+            <li><a class="about__word-cloud--word" data-weight="18">React</a></li>
+            <li><a class="about__word-cloud--word" data-weight="8">Express</a></li>
+            <li><a class="about__word-cloud--word" data-weight="1">F#</a></li>
+            <li><a class="about__word-cloud--word" data-weight="13">JavaScript</a></li>
+            <li><a class="about__word-cloud--word" data-weight="16">HTML</a></li>
+            <li><a class="about__word-cloud--word" data-weight="6">Json</a></li>
+            <li><a class="about__word-cloud--word" data-weight="14">CSS</a></li>
+            <li><a class="about__word-cloud--word" data-weight="4">Serverless API</a></li>
+        </ul>
+        <div class="about__container">
+            <div class="col-1-of-3 about__information">
+                <h3>Studies</h3>
+                <p>
+                    I have a Bachelor of Engineering in Computing from Western Norway University of Applied Sciences. During the degree I specialised in Front-End development. 
+                    <br><br>
+                    Through my thesis I used React, Redux and TypeScript in order to solve the task. Material-UI was also used as a component library.
+                </p>
+            </div>
+            <div class="col-1-of-3 about__information">
+                <h3>Work</h3>
+                <p>
+                    My first real job in IT was at Dataloy, whom I had previously written my thesis for. At Dataloy I worked as a Front-End developer, where I primarily used React and TypeScript.
+                    <br><br>
+                    After Dataloy, I joined TietoEVRY, where I work today.
+                    At TietoEVRY I am working as a Consultant, primarily developing apps for Android. Though, I also do some iOS development from time to time.
+                    In addition, I have also developed serverless APIs in Azure, by writing Azure functions in F#.
+                </p>
+            </div>
+            <div class="col-1-of-3 about__information">
+                <h3>Spare Time</h3>
+                <p>
+                    In my spare time I often end up developing small sized webpages using either the MERN stack, or just plain HTML and CSS. 
+                    <br><br>
+                    I also like to keep up to date when it comes to the Front-End universe, by either reading articles or completing new courses.
+                    <br><br>
+                    Occasionally you may find me dabbling around in Unity or Unreal Engine. 
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2 class="section__title">Contact</h2>
+
     </section>
 </body>
 </html>

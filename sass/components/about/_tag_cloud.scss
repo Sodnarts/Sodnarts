@@ -1,0 +1,149 @@
+ul.about__word-cloud {
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1.5rem;
+    top: 10vh;
+    left: 0;
+    color: #888;
+    overflow: hidden;
+    list-style: none;
+    padding-left: 0;
+
+    & > li {
+        z-index: -1;
+        opacity: 0.3;
+        position: absolute;
+        text-decoration: none;
+        white-space: nowrap;
+
+        & > a {
+            font-size: calc(var(--size) * 0.15rem + 1.5rem);
+        }
+    }
+
+    @for $i from 1 through $tag-amount {
+        & li:nth-child(#{$i}) {
+            animation: slide_#{$i} random(10) + 10s infinite linear;
+        }
+    }
+}
+
+ul.about__word-cloud {
+    @include respond(tab-port) {
+        & > li {
+            position: relative;
+            opacity: 1;
+            animation: none;
+        }
+        top: 0;
+        margin-bottom: 6rem;
+        height: 10%;
+        position: relative;
+        list-style: none;
+        display: flex;
+        animation: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        line-height: 3rem;
+        padding: 0 10rem;
+    }
+
+    @include respond(phone) {
+        padding: 0;
+    }
+}
+ul.about__word-cloud a {
+    @include respond(tab-port) {
+        animation: none;
+        color: var(--color);
+        display: block;
+        padding: 1rem 0.75rem;
+        text-decoration: none;
+        position: relative;
+        --size: 1;
+        font-size: calc(var(--size) * 0.25rem + 2rem);
+    }
+    @include respond(phone) {
+        --size: 1;
+        padding: 0.125rem 0.25rem;
+        font-size: calc(var(--size) * 0.15rem + 1rem);
+    }
+}
+
+@for $i from 1 through $tag-amount {
+    ul.about__word-cloud a[data-weight='#{$i}'] {
+        --size: #{$i};
+    }
+    @include respond(tab-port) {
+        ul.about__word-cloud li:nth-child(#{$i}) {
+            animation: none;
+        }
+    }
+}
+
+ul.about__word-cloud li:nth-child(1n + 1) a {
+    @include respond(tab-port) {
+        @for $i from 1 through $tag-amount {
+            &[data-weight='#{$i}'] {
+                color: lighten(#ff7730, ((19 - $i) * 1.5) * 1%);
+            }
+        }
+    }
+}
+ul.about__word-cloud li:nth-child(2n + 1) a {
+    @include respond(tab-port) {
+        @for $i from 1 through $tag-amount {
+            &[data-weight='#{$i}'] {
+                color: lighten(#55c57a, ((19 - $i) * 1.5) * 1%);
+            }
+        }
+    }
+}
+ul.about__word-cloud li:nth-child(3n + 1) a {
+    @include respond(tab-port) {
+        @for $i from 1 through $tag-amount {
+            &[data-weight='#{$i}'] {
+                color: lighten(#e1306c, ((19 - $i) * 1.5) * 1%);
+            }
+        }
+    }
+}
+ul.about__word-cloud li:nth-child(4n + 1) a {
+    @include respond(tab-port) {
+        @for $i from 1 through $tag-amount {
+            &[data-weight='#{$i}'] {
+                color: lighten(#5643fa, ((19 - $i) * 1.5) * 1%);
+            }
+        }
+    }
+}
+
+// Animations
+@for $k from 1 through $tag-amount / 2 {
+    @keyframes slide_#{$k} {
+        0% {
+            right: -10%;
+            top: random(80) * 1%;
+        }
+        to {
+            right: 100%;
+            top: random(80) * 1%;
+        }
+    }
+}
+
+@for $k from ($tag-amount / 2) + 1 through $tag-amount {
+    @keyframes slide_#{$k} {
+        0% {
+            left: -10%;
+            top: random(80) * 1%;
+        }
+        to {
+            left: 100%;
+            top: random(80) * 1%;
+        }
+    }
+}

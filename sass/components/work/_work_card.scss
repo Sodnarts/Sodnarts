@@ -17,7 +17,7 @@
         align-items: center;
 
         & h2 {
-            color: #eee;
+            color: $header-button-color-background;
             border-radius: 4rem;
             text-align: center;
             padding: 0.5rem 2rem;
@@ -60,7 +60,7 @@
         }
         &-btn {
             @include respond(tab-port) {
-                background: $color-grey-light-2;
+                background: $header-button-color-background;
                 border-radius: 1rem;
                 color: $header-button-color-text;
 
@@ -117,13 +117,6 @@
 
             @include respond(tab-port) {
                 transform: translateY(-1.5rem);
-            }
-        }
-
-        &-btn {
-            @include respond(tab-port) {
-                background: $header-button-color-background;
-                color: $header-button-color-text;
             }
         }
     }

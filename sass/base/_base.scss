@@ -7,6 +7,8 @@
 }
 
 html {
+    scrollbar-width: none;
+
     font-size: 62.5%;
 
     @include respond(tab-land) {
@@ -23,12 +25,28 @@ html {
 }
 
 body {
+    scrollbar-width: none;
     box-sizing: border-box;
     background: #222;
     padding: 3rem 0;
     @include respond(tab-port) {
         padding: 0;
     }
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body::-moz-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body::-o-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 ::selection {
