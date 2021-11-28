@@ -403,7 +403,13 @@
     </section>
     <section id="contact" class="contact">
         <h2 class="section__title">Contact</h2>
-
+        <form method="POST" action="http://localhost:5000/api/user" class="contact__container">
+            <input type="text" class="contact__input-field" placeholder="Name">
+            <input type="text" class="contact__input-field" placeholder="E-Mail">
+            <input type="text" class="contact__input-field" placeholder="Subject">
+            <textarea type="text" class="contact__input-field contact__input-field--multi-line" placeholder="Message"></textarea>
+            <button class="animated-btn contact__submit-btn" type="submit" name="test" value="ok test">Send</button>
+        </form>
     </section>
 </body>
 </html>

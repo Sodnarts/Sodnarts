@@ -6,6 +6,7 @@ ul.about__word-cloud {
     font-size: 1.5rem;
     top: 10vh;
     left: 0;
+    // TODO: Maybe use $color-primary here, and set opacity on & > li to .15 or .20;
     color: #888;
     overflow: hidden;
     list-style: none;
@@ -25,7 +26,7 @@ ul.about__word-cloud {
 
     @for $i from 1 through $tag-amount {
         & li:nth-child(#{$i}) {
-            animation: slide_#{$i} random(10) + 10s infinite linear;
+            animation: slide_#{$i} random(1000) * 0.01 + 10s infinite linear;
         }
     }
 }

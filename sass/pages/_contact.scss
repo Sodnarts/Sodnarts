@@ -4,4 +4,74 @@
     min-height: 100vh;
     background-color: $color-grey-dark-3;
     padding: 6rem 0;
+
+    &__container {
+        border-radius: 2rem;
+        padding-top: 0.8rem;
+        overflow: hidden;
+        background: #222;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: calc(50% + 6rem);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        max-width: 90rem;
+        padding: 4rem;
+    }
+
+    &__input-field {
+        color: $color-primary;
+        background: #222;
+        border: none;
+        outline: none;
+        padding: 1.5rem 2rem;
+        font-size: 2.2rem;
+        border-bottom: 1px solid $color-primary;
+
+        &::placeholder {
+            color: $color-primary;
+            opacity: 0.5;
+        }
+
+        &:focus::placeholder {
+            opacity: 0.75;
+        }
+
+        &--multi-line {
+            height: 20vh;
+            resize: none;
+            border: none;
+        }
+    }
+
+    &__submit-btn {
+        border: none;
+        background: transparent;
+        color: $color-primary;
+        border-top: 1px solid $color-primary;
+        border-bottom: 1px solid $color-primary;
+        margin-top: 4rem;
+        width: 30%;
+        min-width: 10rem;
+        margin: 4rem auto 0 auto;
+
+        &:hover {
+            color: #222;
+            transition-delay: 0.5s;
+        }
+
+        &:hover:after {
+            background: $color-primary;
+            transition-delay: 0.35s;
+        }
+
+        &:before {
+            top: 0;
+            border: 1px solid $color-primary;
+            border-top: 0;
+            border-bottom: 0;
+        }
+    }
 }
