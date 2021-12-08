@@ -64,8 +64,8 @@
                                 <p>Firebase</p>
                             </div>
                             <label for="toggle1" class="work__card--details-btn-container">
-                                <a class="animated-btn work__card--details-btn">View Details</a>
-                            </label>           
+                                <a class="animated-btn animated-button-lined">View Details</a>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                                 <p>Material-UI</p>
                             </div>
                             <label for="toggle2"  class="work__card--details-btn-container">
-                                <a class="animated-btn work__card--details-btn">View Details</a>
+                                <a class="animated-btn animated-button-lined">View Details</a>
                             </label>
                         </div>
                     </div>
@@ -106,8 +106,9 @@
                                 <p>Material-UI</p>
                             </div>
                             <label for="toggle3"  class="work__card--details-btn-container">
-                                <a class="animated-btn work__card--details-btn">View Details</a>
-                            </label>                        </div>
+                                <a class="animated-btn animated-button-lined">View Details</a>
+                            </label>                        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,7 +126,7 @@
                                 <p>Material-UI</p>
                             </div>
                             <label for="toggle4"  class="work__card--details-btn-container">
-                                <a class="animated-btn work__card--details-btn">View Details</a>
+                                <a class="animated-btn animated-button-lined">View Details</a>
                             </label>                        
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                                 <p>Express</p>
                             </div>
                             <label for="toggle5"  class="work__card--details-btn-container">
-                                <a class="animated-btn work__card--details-btn">View Details</a>
+                                <a class="animated-btn  animated-button-lined">View Details</a>
                             </label>
                         </div>
                     </div>
@@ -279,7 +280,7 @@
                     <h2>Internationalization</h2>
 
                     <p>
-                        <span>NOTE: This is in progress.</span><br><br>
+                        <span>NOTE: Currently in progress.</span><br><br>
                         Handling <span>translations</span> for an app isn't always straight forward. The easiest way is to include the strings within the app itself. Doing it this way however,
                         will make it difficult to ensure that the strings match on both <span>Android</span> and <span>iOS</span>. One way to ensure that they are always in sync, is to store the
                         strings outside the app, and instead have the app fetch the strings whenever you update them. 
@@ -403,12 +404,12 @@
     </section>
     <section id="contact" class="contact">
         <h2 class="section__title">Contact</h2>
-        <form method="POST" action="http://localhost:5000/api/user" class="contact__container">
-            <input type="text" class="contact__input-field" placeholder="Name">
-            <input type="text" class="contact__input-field" placeholder="E-Mail">
-            <input type="text" class="contact__input-field" placeholder="Subject">
-            <textarea type="text" class="contact__input-field contact__input-field--multi-line" placeholder="Message"></textarea>
-            <button class="animated-btn contact__submit-btn" type="submit" name="test" value="ok test">Send</button>
+        <form method="POST" action="http://localhost:5000/api/email" class="contact__container">
+            <input type="text" id="name" name="name" class="contact__input-field" placeholder="Name">
+            <input type="email" id="email" name="email" autofill="email" class="contact__input-field" placeholder="E-Mail">
+            <input type="text" id="subject" name="subject" class="contact__input-field" placeholder="Subject">
+            <textarea type="text" id="message" name="message" class="contact__input-field contact__input-field--multi-line" placeholder="Message"></textarea>
+            <button class="animated-btn animated-button-lined animated-button-lined--green" type="submit"  >Send</button>
         </form>
     </section>
 </body>

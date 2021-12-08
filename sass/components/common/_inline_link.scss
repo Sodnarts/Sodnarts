@@ -4,6 +4,7 @@
     font-weight: 400;
     cursor: pointer;
     position: relative;
+    white-space: nowrap;
     transition: 0.2s;
 
     &::before {

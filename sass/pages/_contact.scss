@@ -29,6 +29,7 @@
         padding: 1.5rem 2rem;
         font-size: 2.2rem;
         border-bottom: 1px solid $color-primary;
+        font-family: 'Courier New', Courier, monospace;
 
         &::placeholder {
             color: $color-primary;
@@ -43,35 +44,6 @@
             height: 20vh;
             resize: none;
             border: none;
-        }
-    }
-
-    &__submit-btn {
-        border: none;
-        background: transparent;
-        color: $color-primary;
-        border-top: 1px solid $color-primary;
-        border-bottom: 1px solid $color-primary;
-        margin-top: 4rem;
-        width: 30%;
-        min-width: 10rem;
-        margin: 4rem auto 0 auto;
-
-        &:hover {
-            color: #222;
-            transition-delay: 0.5s;
-        }
-
-        &:hover:after {
-            background: $color-primary;
-            transition-delay: 0.35s;
-        }
-
-        &:before {
-            top: 0;
-            border: 1px solid $color-primary;
-            border-top: 0;
-            border-bottom: 0;
         }
     }
 }

@@ -28,7 +28,7 @@
             transform: translateY(27rem);
 
             @include respond(tab-port) {
-                transform: translateY(-0.5rem);
+                visibility: hidden;
             }
         }
 
@@ -55,7 +55,7 @@
             transition-delay: 0s;
 
             @include respond(tab-port) {
-                transform: translateY(-1.8rem);
+                transform: translateY(-4.2rem);
             }
         }
         &-btn {
@@ -116,7 +116,7 @@
             transition-delay: 2.2s;
 
             @include respond(tab-port) {
-                transform: translateY(-1.5rem);
+                transform: translateY(-4.2rem);
             }
         }
     }

@@ -1,0 +1,46 @@
+.animated-button-lined {
+    border: none;
+    background: transparent;
+    color: $color-white;
+    border-top: 1px solid $color-white;
+    border-bottom: 1px solid $color-white;
+    margin-top: 4rem;
+    width: 30%;
+    min-width: 10rem;
+    margin: 4rem auto 0 auto;
+
+    &:hover {
+        color: #222;
+        transition-delay: 0.5s;
+    }
+
+    &:hover:after {
+        background: $color-white;
+        transition-delay: 0.35s;
+    }
+
+    &:before {
+        top: 0;
+        border: 1px solid $color-white;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    &--green {
+        color: $color-primary;
+        border-top: 1px solid $color-primary;
+        border-bottom: 1px solid $color-primary;
+
+        &:hover:after {
+            background: $color-primary;
+            transition-delay: 0.35s;
+        }
+
+        &:before {
+            top: 0;
+            border: 1px solid $color-primary;
+            border-top: 0;
+            border-bottom: 0;
+        }
+    }
+}
