@@ -24,7 +24,7 @@
         <section id="home" class="overview">
             <div class="overview__card">
                 <div class="overview__card--avatar">
-                    <img class="overview__card--avatar-img" src="img/person-image.jpg" >
+                    <img class="overview__card--avatar-img" alt="Portrait photograph" src="img/person-image.jpg" >
                 </div>
                 <ul class="overview__card--icons">
                     <li><a href="https://facebook.com/glennrobert.strandos/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -40,7 +40,7 @@
             <div class="overview__description">
                 <h1 class="overview__description--title typewriter">Hello! My name is Glenn.</h1>
                 <h3 class="overview__description--text">
-                    I am a developer from Norway. My interests lie within the space of web development, where I enjoy working with technologies such as React, Sass, TypeScript and more.
+                    I am a developer located in Bergen, Norway. My interests lie within the space of web development, where I enjoy working with technologies such as React, Sass, TypeScript and more.
                     Occasionally, you may find me creating APIs with Node.js and Express.
                 </h3>
             </div>
@@ -52,7 +52,7 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/portfolio-image.png">
+                        <img class="work__card--img" alt="Screeenshot of this website" src="img/portfolio-image.png">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
@@ -72,7 +72,7 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/recipes-image.png">
+                        <img class="work__card--img" alt="Screenshot of the Recipes website" src="img/recipes-image.png">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
@@ -94,7 +94,7 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/league-watcher-image.png">
+                        <img class="work__card--img" alt="Screeenshot of the League-Watcher website" src="img/league-watcher-image.png">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
@@ -114,7 +114,7 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/internationalization-image.png">
+                        <img class="work__card--img" alt="Screeenshot of the internationalization website" src="img/internationalization-image.png">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
@@ -136,7 +136,7 @@
             <div class="col-1-of-2">
                 <div class="card">
                     <div class="card__side card__side--front">
-                        <img class="work__card--img" src="img/server-image.jpeg">
+                        <img class="work__card--img" alt="Image of Node.js, Express and MongoDB" src="img/server-image.jpeg">
                     </div>
                     <div class="card__side card__side--back card__side--back-1">
                         <div class="work__card--details">
@@ -406,9 +406,9 @@
     <section id="contact" class="contact">
         <h2 class="section__title">Contact</h2>
         <form method="POST" action="https://sodnarts-server.herokuapp.com/api/email" class="contact__container">
-            <input type="text" id="name" name="name" class="contact__input-field" placeholder="Name">
-            <input type="email" id="email" name="email" autofill="email" class="contact__input-field" placeholder="E-Mail">
-            <input type="text" id="subject" name="subject" class="contact__input-field" placeholder="Subject">
+            <input type="text" id="name" name="name" autocomplete="off" class="contact__input-field" placeholder="Name">
+            <input type="email" id="email" name="email" autocomplete="email" class="contact__input-field" placeholder="E-Mail">
+            <input type="text" id="subject" name="subject" autocomplete="off" class="contact__input-field" placeholder="Subject">
             <textarea type="text" id="message" name="message" class="contact__input-field contact__input-field--multi-line" placeholder="Message"></textarea>
             <button class="animated-btn animated-button-lined animated-button-lined--green" type="submit"  >Send</button>
         </form>

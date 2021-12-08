@@ -3,6 +3,7 @@
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
+    z-index: 2000;
 
     &--background {
         position: fixed;
