@@ -28,7 +28,6 @@ body {
     scrollbar-width: none;
     box-sizing: border-box;
     background: #222;
-    padding: 3rem 0;
     @include respond(tab-port) {
         padding: 0;
     }

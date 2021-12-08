@@ -1,7 +1,15 @@
-.overview {
-    &__card {
+footer {
+    min-height: 10vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    &__box {
         &--icons {
-            @include absoluteCenter;
             display: flex;
             z-index: 3;
             margin: 0;
@@ -21,8 +29,6 @@
                 margin: 0 0.5rem;
                 border-radius: 50%;
                 transition: 0.5s;
-                transform: translateY(20rem);
-                opacity: 0;
             }
         }
 
@@ -95,7 +101,6 @@
         }
 
         &--icons {
-            @include absoluteCenter;
             display: flex;
             z-index: 3;
             margin: 0;
@@ -115,36 +120,12 @@
                 margin: 0 0.5rem;
                 border-radius: 50%;
                 transition: 0.5s;
-                transform: translateY(20rem);
-                opacity: 0;
             }
         }
 
         &:hover &--icons li a,
         &:focus-within &--icons li a {
             transform: translateY(0);
-            opacity: 1;
-        }
-
-        &:hover &--icons li:nth-child(1) a,
-        &:focus-within &--icons li:nth-child(1) a {
-            transition-delay: 0s;
-        }
-        &:hover &--icons li:nth-child(2) a,
-        &:focus-within &--icons li:nth-child(2) a {
-            transition-delay: 0.2s;
-        }
-        &:hover &--icons li:nth-child(3) a,
-        &:focus-within &--icons li:nth-child(3) a {
-            transition-delay: 0.4s;
-        }
-        &:hover &--icons li:nth-child(4) a,
-        &:focus-within &--icons li:nth-child(4) a {
-            transition-delay: 0.6s;
-        }
-        &:hover &--icons li:nth-child(5) a,
-        &:focus-within &--icons li:nth-child(5) a {
-            transition-delay: 0.8s;
         }
     }
 }

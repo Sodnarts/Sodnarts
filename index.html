@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fira Mono:100,200,300,400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/logo-green.png">
@@ -32,7 +31,7 @@
                     <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     <li><a href="https://linkedin.com/in/glenn-robert-strandos-951618156/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                     <li><a href="https://github.com/Sodnarts" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="mailto:strandos.glenn@gmail.com"><i class="fab far fa-envelope" aria-hidden="true"></i></a></li>
                 </ul>
                 <div class="overview__card--details">
                     <h2>Glenn Robert Strandos<br><span>Web Developer</span></h2>
@@ -155,11 +154,11 @@
                 </div>
             </div>
         </div>
-        <input type="checkbox" class="work__checkbox work__checkbox-1" id="toggle1">
-        <input type="checkbox" class="work__checkbox work__checkbox-2" id="toggle2">
-        <input type="checkbox" class="work__checkbox work__checkbox-3" id="toggle3">
-        <input type="checkbox" class="work__checkbox work__checkbox-4" id="toggle4">
-        <input type="checkbox" class="work__checkbox work__checkbox-5" id="toggle5">
+        <input type="checkbox" class="work__checkbox work__checkbox-1" id="toggle1" aria-hidden="true">
+        <input type="checkbox" class="work__checkbox work__checkbox-2" id="toggle2" aria-hidden="true">
+        <input type="checkbox" class="work__checkbox work__checkbox-3" id="toggle3" aria-hidden="true">
+        <input type="checkbox" class="work__checkbox work__checkbox-4" id="toggle4" aria-hidden="true">
+        <input type="checkbox" class="work__checkbox work__checkbox-5" id="toggle5" aria-hidden="true">
         <div class="work__details work__details-1">
             <label for="toggle1" class="work__details--background"></label>
             <div class="work__details--container">
@@ -288,7 +287,7 @@
                         Internationalization is designed to solve this issue. By storing the original strings, and their translations, we can then export them as <span>.xml (Android)</span> or <span>.string (iOS)</span> files,
                         which could easily be integrated into the app. This will ensure that the exported strings are always in sync across both <span>Android</span> and <span>iOS</span>. There will also be a <span>CLI</span> that fetches the corresponding files, and adds them to the app correctly.
                         <br><br>
-                        Feel free to view the <a class="inline-link" href="https://internationalization.web.app" target="_blank">Website</a> or the <a class="inline-link" href="https://github.com/Sodnarts/i18n" target="_blank">Github</a>.
+                        Feel free to view the <a class="inline-link" href="https://internationalization.web.app" target="_blank">Website</a>.
                     </p>
                     <ul>
                         <h3>Features</h3>
@@ -355,20 +354,22 @@
             <li><a class="about__word-cloud--word" data-weight="2">Azure Functions</a></li>
             <li><a class="about__word-cloud--word" data-weight="9">Mongoose</a></li>
             <li><a class="about__word-cloud--word" data-weight="3">Azure</a></li>
-            <li><a class="about__word-cloud--word" data-weight="17">TypeScript</a></li>
-            <li><a class="about__word-cloud--word" data-weight="12">Node.js</a></li>
+            <li><a class="about__word-cloud--word" data-weight="13">Firebase</a></li>
+            <li><a class="about__word-cloud--word" data-weight="19">TypeScript</a></li>
+            <li><a class="about__word-cloud--word" data-weight="14">Node.js</a></li>
             <li><a class="about__word-cloud--word" data-weight="7">OpenAPI</a></li>
-            <li><a class="about__word-cloud--word" data-weight="11">Redux</a></li>
+            <li><a class="about__word-cloud--word" data-weight="12">Redux</a></li>
             <li><a class="about__word-cloud--word" data-weight="10">MongoDB</a></li>
             <li><a class="about__word-cloud--word" data-weight="5">YAML</a></li>
-            <li><a class="about__word-cloud--word" data-weight="15">SCSS</a></li>
-            <li><a class="about__word-cloud--word" data-weight="18">React</a></li>
+            <li><a class="about__word-cloud--word" data-weight="11">a11y</a></li>
+            <li><a class="about__word-cloud--word" data-weight="17">SCSS</a></li>
+            <li><a class="about__word-cloud--word" data-weight="20">React</a></li>
             <li><a class="about__word-cloud--word" data-weight="8">Express</a></li>
             <li><a class="about__word-cloud--word" data-weight="1">F#</a></li>
-            <li><a class="about__word-cloud--word" data-weight="13">JavaScript</a></li>
-            <li><a class="about__word-cloud--word" data-weight="16">HTML</a></li>
+            <li><a class="about__word-cloud--word" data-weight="15">JavaScript</a></li>
+            <li><a class="about__word-cloud--word" data-weight="18">HTML</a></li>
             <li><a class="about__word-cloud--word" data-weight="6">Json</a></li>
-            <li><a class="about__word-cloud--word" data-weight="14">CSS</a></li>
+            <li><a class="about__word-cloud--word" data-weight="16">CSS</a></li>
             <li><a class="about__word-cloud--word" data-weight="4">Serverless API</a></li>
         </ul>
         <div class="about__container">
@@ -404,7 +405,7 @@
     </section>
     <section id="contact" class="contact">
         <h2 class="section__title">Contact</h2>
-        <form method="POST" action="http://localhost:5000/api/email" class="contact__container">
+        <form method="POST" action="https://sodnarts-server.herokuapp.com/api/email" class="contact__container">
             <input type="text" id="name" name="name" class="contact__input-field" placeholder="Name">
             <input type="email" id="email" name="email" autofill="email" class="contact__input-field" placeholder="E-Mail">
             <input type="text" id="subject" name="subject" class="contact__input-field" placeholder="Subject">
@@ -412,5 +413,14 @@
             <button class="animated-btn animated-button-lined animated-button-lined--green" type="submit"  >Send</button>
         </form>
     </section>
+    <footer>
+        <ul class="footer__box--icons">
+            <li><a href="https://facebook.com/glennrobert.strandos/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://linkedin.com/in/glenn-robert-strandos-951618156/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/Sodnarts" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="mailto:strandos.glenn@gmail.com"><i class="fab far fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>

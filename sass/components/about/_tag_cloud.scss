@@ -89,7 +89,7 @@ ul.about__word-cloud li:nth-child(1n + 1) a {
     @include respond(tab-port) {
         @for $i from 1 through $tag-amount {
             &[data-weight='#{$i}'] {
-                color: lighten(#ff7730, ((19 - $i) * 1.5) * 1%);
+                color: lighten(#ff7730, ((($tag-amount + 1) - $i) * 1.5) * 1%);
             }
         }
     }
@@ -98,7 +98,7 @@ ul.about__word-cloud li:nth-child(2n + 1) a {
     @include respond(tab-port) {
         @for $i from 1 through $tag-amount {
             &[data-weight='#{$i}'] {
-                color: lighten(#55c57a, ((19 - $i) * 1.5) * 1%);
+                color: lighten(#55c57a, ((($tag-amount + 1) - $i) * 1.5) * 1%);
             }
         }
     }
@@ -107,7 +107,7 @@ ul.about__word-cloud li:nth-child(3n + 1) a {
     @include respond(tab-port) {
         @for $i from 1 through $tag-amount {
             &[data-weight='#{$i}'] {
-                color: lighten(#e1306c, ((19 - $i) * 1.5) * 1%);
+                color: lighten(#e1306c, ((($tag-amount + 1) - $i) * 1.5) * 1%);
             }
         }
     }
@@ -116,7 +116,7 @@ ul.about__word-cloud li:nth-child(4n + 1) a {
     @include respond(tab-port) {
         @for $i from 1 through $tag-amount {
             &[data-weight='#{$i}'] {
-                color: lighten(#5643fa, ((19 - $i) * 1.5) * 1%);
+                color: lighten(#5643fa, ((($tag-amount + 1) - $i) * 1.5) * 1%);
             }
         }
     }
