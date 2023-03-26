@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "sodnarts-react"
+    "default": "strandos"
   },
   "targets": {
     "sodnarts-react": {
       "hosting": {
         "prod": [
-          "sodnarts-react"
+          "strandos"
         ],
         "test": [
           "sodnarts-test"
