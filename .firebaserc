@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "strandos"
+    "default": "sodnarts-react"
   },
   "targets": {
     "sodnarts-react": {
