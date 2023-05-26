@@ -1,7 +1,6 @@
 .inline-link {
-    color: #eee;
+    color: var(--color-inline-link);
     text-decoration: none;
-    font-weight: 400;
     cursor: pointer;
     position: relative;
     white-space: nowrap;
@@ -12,7 +11,7 @@
         width: calc(100% + 4px);
         position: absolute;
         height: 2px;
-        background: $color-primary;
+        background: var(--color-primary);
         left: -2px;
         bottom: -2px;
         transition: 0.75s;
@@ -21,7 +20,7 @@
     }
 
     &:hover {
-        color: #fff;
+        color: white;
     }
 
     &:hover::before {

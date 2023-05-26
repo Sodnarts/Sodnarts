@@ -6,8 +6,7 @@ ul.about__word-cloud {
     font-size: 1.5rem;
     top: 10vh;
     left: 0;
-    // TODO: Maybe use $color-primary here, and set opacity on & > li to .15 or .20;
-    color: #888;
+    color: var(--color-tag-cloud);
     overflow: hidden;
     list-style: none;
     padding-left: 0;

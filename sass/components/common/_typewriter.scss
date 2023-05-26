@@ -33,7 +33,7 @@
     }
 
     &::before {
-        background-color: $background-color;
+        background-color: var(--background-color);
         animation: typewriter $typewriter-speed + 0s steps($typewriter-characters) 1s forwards;
     }
 

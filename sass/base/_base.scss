@@ -8,6 +8,7 @@
 
 html {
     scrollbar-width: none;
+    scroll-behavior: smooth;
 
     font-size: 62.5%;
 
@@ -27,7 +28,7 @@ html {
 body {
     scrollbar-width: none;
     box-sizing: border-box;
-    background: #222;
+    background: var(--background-color);
     @include respond(tab-port) {
         padding: 0;
     }
@@ -49,6 +50,6 @@ body::-o-scrollbar {
 }
 
 ::selection {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }

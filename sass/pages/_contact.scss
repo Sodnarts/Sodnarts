@@ -2,51 +2,94 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: $color-grey-dark-3;
+    background-color: var(--color-grey-dark-3);
     padding: 6rem 0;
 
     &__container {
-        border-radius: 2rem;
-        padding-top: 0.8rem;
-        overflow: hidden;
-        background: #222;
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: calc(50% + 6rem);
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        max-width: 90rem;
-        padding: 4rem;
+        align-items: center;
+        width: 100%;
+        margin-top: 3.2rem;
+        transform: translate(0, 0); // No idea why, but this is required in order to have the button animate properly.
     }
 
-    &__input-field {
-        color: $color-primary;
-        background: #222;
-        border: none;
-        outline: none;
-        padding: 1.5rem 2rem;
-        font-size: 2.2rem;
-        border-bottom: 1px solid $color-primary;
+    &__title {
+        font-size: 4rem;
+        letter-spacing: 0.3rem;
         font-family: 'Courier New', Courier, monospace;
+        font-weight: 100;
+        text-align: center;
+        margin-top: 6.4rem;
+        color: var(--color-white);
+    }
 
-        &::placeholder {
-            color: $color-primary;
+    &__input {
+        &--container {
+            position: relative;
+            width: 90%;
+            max-width: 48rem;
+            margin: 2.4rem 0;
+        }
+
+        &--container:focus-within > &-field {
+            border-color: var(--color-primary);
+        }
+
+        &--container:focus-within > &-field:placeholder-shown + &--label {
+            opacity: 0.8 !important;
+        }
+        
+        &--container > &-field:not(:placeholder-shown) + &--label {
+            animation: label-slide-up 0.2s ease-out forwards;
+        }
+
+        &--container > &-field:placeholder-shown + &--label {
+            animation: label-slide-down 0.2s ease-out forwards;
+        }
+
+        &--label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 2.4rem;
+            font-size: 1.4rem;
+            color: var(--color-grey-light);
             opacity: 0.5;
+            transition: all 2s ease-in-out forwards;
+            font-weight: 300;
+            font-family: 'Lato', sans-serif;
+
+            &--text-area {
+                top: 3.5rem;
+            }
         }
 
-        &:focus::placeholder {
-            opacity: 0.75;
-        }
+        &-field {
+            color: var(--color-white);
+            background: var(--background-color);
+            width: 100%;
+            height: 4.4rem;
+            padding: 2.4rem;
+            font-size: 1.8rem;
+            outline: none;
+            border: 1px solid var(--color-grey-dark);
+            border-radius: 0.6rem;
+            font-weight: 300;
+            font-family: 'Lato', sans-serif;
+    
+            &--multi-line {
+                height: 20vh;
+                resize: none;
+                border: 1px solid var(--color-grey-dark);
+                border-radius: 0.6rem;
+                font-size: 1.6rem;
+    
+                @include respond(phone) {
+                    height: 30vh;
+                }
 
-        &--multi-line {
-            height: 20vh;
-            resize: none;
-            border: none;
-
-            @include respond(phone) {
-                height: 30vh;
+                @include scrollbar;
             }
         }
     }

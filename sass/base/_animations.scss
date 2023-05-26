@@ -12,7 +12,7 @@
 
 @keyframes blink {
     4% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     5% {
         background: transparent;
@@ -22,10 +22,10 @@
         background: transparent;
     }
     10% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     14% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     15% {
         background: transparent;
@@ -35,11 +35,11 @@
         background: transparent;
     }
     20% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
 
     24% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     25% {
         background: transparent;
@@ -49,11 +49,11 @@
         background: transparent;
     }
     30% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
 
     34% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     35% {
         background: transparent;
@@ -63,11 +63,11 @@
         background: transparent;
     }
     40% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
 
     44% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     45% {
         background: transparent;
@@ -77,11 +77,11 @@
         background: transparent;
     }
     50% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
 
     54% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     55% {
         background: transparent;
@@ -91,11 +91,11 @@
         background: transparent;
     }
     60% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
 
     64% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     65% {
         background: transparent;
@@ -105,10 +105,10 @@
         background: transparent;
     }
     70% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     74% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     75% {
         background: transparent;
@@ -118,11 +118,11 @@
         background: transparent;
     }
     80% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
 
     84% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     85% {
         background: transparent;
@@ -132,10 +132,10 @@
         background: transparent;
     }
     90% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     94% {
-        background: #eee;
+        background: var(--color-grey-light);
     }
     to  {
         background: green;
@@ -181,5 +181,31 @@
     to {
         opacity: 1;
         transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes label-slide-up {
+    to {
+        top: -1.6rem;
+        left: 0;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        opacity: 1;
+    }
+}
+
+@keyframes label-slide-down {
+    from {
+        top: -1.6rem;
+        left: 0;
+        font-size: 1.8rem;
+        color: var(--color-white);
+        opacity: 1;
+    }
+    to {
+        left: 2.4rem;
+        font-size: 1.4rem;
+        color: var(--color-grey-light);
+        opacity: 0.5;
     }
 }

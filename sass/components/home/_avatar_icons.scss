@@ -17,7 +17,7 @@
                 width: 5rem;
                 height: 5rem;
                 text-align: center;
-                background: $color-white;
+                background: white;
                 margin: 0 0.5rem;
                 border-radius: 50%;
                 transition: 0.5s;
@@ -30,7 +30,7 @@
             transition: 0.5s;
             font-size: 2.4rem;
             line-height: 5rem;
-            color: $color-grey-dark-3;
+            color: #333;
         }
 
         &--icons li:nth-child(1) a {
@@ -91,32 +91,6 @@
                 @include respond(tab-port) {
                     color: $color-mail;
                 }
-            }
-        }
-
-        &--icons {
-            @include absoluteCenter;
-            display: flex;
-            z-index: 3;
-            margin: 0;
-            padding: 0;
-
-            & li {
-                list-style: none;
-            }
-
-            & li a {
-                position: relative;
-                display: block;
-                width: 5rem;
-                height: 5rem;
-                text-align: center;
-                background: $color-white;
-                margin: 0 0.5rem;
-                border-radius: 50%;
-                transition: 0.5s;
-                transform: translateY(20rem);
-                opacity: 0;
             }
         }
 

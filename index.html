@@ -16,20 +16,21 @@
 </head>
 
 <body> 
-    <header class="header">
+    <input type="checkbox" class="theme-switch__checkbox" id="theme-toggle" aria-hidden="true" checked>
+    <header class="header page-content">
         <a href="#" class="animated-btn animated-btn--selected">Home</a>
         <a href="#work" class="animated-btn">Work</a>
         <a href="#about" class="animated-btn">About</a>
         <a href="#contact" class="animated-btn">Contact</a>
     </header>
-    <main>
+    <main class="page-content">
         <section id="home" class="overview">
             <div class="overview__card">
                 <div class="overview__card--avatar">
                     <img class="overview__card--avatar-img" alt="Portrait photograph" src="img/person-image.jpg" >
                 </div>
                 <ul class="overview__card--icons">
-                    <li><a href="https://facebook.com/glennrobert.strandos/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                     <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     <li><a href="https://linkedin.com/in/glenn-robert-strandos-951618156/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
                     <li><a href="https://github.com/Sodnarts" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>
@@ -46,13 +47,72 @@
                     Occasionally, you may find me creating APIs with Node.js and Express.
                 </h3>
             </div>
+            <label class="theme-switch__container" for="theme-toggle">
+                <div class="theme-switch__sky "></div>
+                <div class="theme-switch__circle"></div>
+                <div class="theme-switch__overlay"></div>
+                <div class="theme-switch__stars">
+                    <p><i class="theme-switch__star theme-switch__star--1"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--2"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--3"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--4"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--5"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--6"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--7"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--8"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--9"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--10"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--11"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--12"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--13"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--14"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--15"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--16"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--17"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--18"></i></p>
+                    <p><i class="theme-switch__star theme-switch__star--19"></i></p>
+                </div>
+                <div class="theme-switch__clouds">
+                    <div class="theme-switch__cloud--container theme-switch__cloud--container--1">
+                        <div class="theme-switch__cloud theme-switch__cloud--1"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--2"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--3"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--4"></div>
+                    </div>
+                    <div class="theme-switch__cloud--container theme-switch__cloud--container--2">
+                        <div class="theme-switch__cloud theme-switch__cloud--1"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--2"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--3"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--4"></div>
+                    </div>
+                    <div class="theme-switch__cloud--container theme-switch__cloud--container--3">
+                        <div class="theme-switch__cloud theme-switch__cloud--1"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--2"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--3"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--4"></div>
+                    </div>
+                    <div class="theme-switch__cloud--container theme-switch__cloud--container--4">
+                        <div class="theme-switch__cloud theme-switch__cloud--1"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--2"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--3"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--4"></div>
+                    </div>
+                    <div class="theme-switch__cloud--container theme-switch__cloud--container--5">
+                        <div class="theme-switch__cloud theme-switch__cloud--1"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--2"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--3"></div>
+                        <div class="theme-switch__cloud theme-switch__cloud--4"></div>
+                    </div>
+                </div>
+            </label>
         </section>
     </main>
-    <section id="work" class="work">
+
+    <section id="work" class="work page-content">
         <h2 class="section__title">Projects</h2>
         <div class="work__card row">
             <div class="col-1-of-2">
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card__side card__side--front">
                         <img class="work__card--img" alt="Screeenshot of this website" src="img/portfolio-image.png">
                     </div>
@@ -72,7 +132,7 @@
                 </div>
             </div>
             <div class="col-1-of-2">
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card__side card__side--front">
                         <img class="work__card--img" alt="Screenshot of the Recipes website" src="img/recipes-image.png">
                     </div>
@@ -94,7 +154,7 @@
         </div>
         <div class="work__card row">
             <div class="col-1-of-2">
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card__side card__side--front">
                         <img class="work__card--img" alt="Screeenshot of the League-Watcher website" src="img/league-watcher-image.png">
                     </div>
@@ -114,7 +174,7 @@
                 </div>
             </div>
             <div class="col-1-of-2">
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card__side card__side--front">
                         <img class="work__card--img" alt="Screeenshot of the internationalization website" src="img/internationalization-image.png">
                     </div>
@@ -136,7 +196,7 @@
         </div>
         <div class="work__card row">
             <div class="col-1-of-2">
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card__side card__side--front">
                         <img class="work__card--img" alt="Image of Node.js, Express and MongoDB" src="img/server-image.jpeg">
                     </div>
@@ -149,7 +209,7 @@
                                 <p>Express</p>
                             </div>
                             <label for="toggle5"  class="work__card--details-btn-container">
-                                <a class="animated-btn  animated-button-lined">View Details</a>
+                                <a class="animated-btn animated-button-lined">View Details</a>
                             </label>
                         </div>
                     </div>
@@ -164,7 +224,7 @@
         <div class="work__details work__details-1">
             <label for="toggle1" class="work__details--background"></label>
             <div class="work__details--container">
-                <label for="toggle1" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <label for="toggle1" class="work__details--close" tabindex="0"><span class="work__details--close-icon">&nbsp;</span></label>
                 <div class="work__details--main">
                     <h2>Portfolio</h2>
                     <p>
@@ -199,7 +259,7 @@
         <div class="work__details work__details-2">
             <label for="toggle2" class="work__details--background"></label>
             <div class="work__details--container">
-                <label for="toggle2" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <label for="toggle2" class="work__details--close" tabindex="0"><span class="work__details--close-icon">&nbsp;</span></label>
                 <div class="work__details--main">
                     <h2>Cookbook</h2>
 
@@ -238,7 +298,7 @@
         <div class="work__details work__details-3">
             <label for="toggle3" class="work__details--background"></label>
             <div class="work__details--container">
-                <label for="toggle3" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <label for="toggle3" class="work__details--close" tabindex="0"><span class="work__details--close-icon">&nbsp;</span></label>
                 <div class="work__details--main">
                     <h2>League-Watcher</h2>
 
@@ -276,7 +336,7 @@
         <div class="work__details work__details-4">
             <label for="toggle4" class="work__details--background"></label>
             <div class="work__details--container">
-                <label for="toggle4" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <label for="toggle4" class="work__details--close" tabindex="0"><span class="work__details--close-icon">&nbsp;</span></label>
                 <div class="work__details--main">
                     <h2>Internationalization</h2>
 
@@ -313,7 +373,7 @@
         <div class="work__details work__details-5">
             <label for="toggle5" class="work__details--background"></label>
             <div class="work__details--container">
-                <label for="toggle5" class="work__details--close"><span class="work__details--close-icon">&nbsp;</span></label>
+                <label for="toggle5" class="work__details--close" tabindex="0"><span class="work__details--close-icon">&nbsp;</span></label>
                 <div class="work__details--main">
                     <h2>Node.js Server</h2>
 
@@ -350,7 +410,8 @@
             </div>
         </div>
     </section>
-    <section id="about" class="about">
+    
+    <section id="about" class="about page-content">
         <h2 class="section__title">About</h2>
         <ul class="about__word-cloud">
             <li><a class="about__word-cloud--word" data-weight="2">Azure Functions</a></li>
@@ -375,7 +436,7 @@
             <li><a class="about__word-cloud--word" data-weight="4">Serverless API</a></li>
         </ul>
         <div class="about__container">
-            <div class="col-1-of-3 about__information">
+            <div class="col-1-of-3 about__information" tabindex="0">
                 <h3>Studies</h3>
                 <p>
                     I have a Bachelor of Engineering in Computing from Western Norway University of Applied Sciences. During the degree I specialised in Front-End development. 
@@ -383,17 +444,17 @@
                     Through my thesis I used React, Redux and TypeScript in order to solve the task. Material-UI was also used as a component library.
                 </p>
             </div>
-            <div class="col-1-of-3 about__information">
+            <div class="col-1-of-3 about__information" tabindex="0">
                 <h3>Work</h3>
                 <p>
                     My first real job in IT was at Dataloy, whom I had previously written my thesis for. At Dataloy I worked as a Front-End developer, where I primarily used React and TypeScript.
                     <br><br>
                     After Dataloy, I joined TietoEVRY, where I work today.
-                    At TietoEVRY I am working as a Consultant, primarily developing apps for Android. Though, I also do some iOS development from time to time.
+                    &nbsp;At TietoEVRY I am working as a Consultant, primarily developing apps for Android. Though, I also do some iOS development from time to time.
                     In addition, I have also developed serverless APIs in Azure, by writing Azure functions in F#.
                 </p>
             </div>
-            <div class="col-1-of-3 about__information">
+            <div class="col-1-of-3 about__information" tabindex="0">
                 <h3>Spare Time</h3>
                 <p>
                     In my spare time I often end up developing small sized webpages using either the MERN stack, or just plain HTML and CSS. 
@@ -405,19 +466,35 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="contact">
-        <h2 class="section__title">Contact</h2>
+
+
+    <section id="contact" class="contact page-content">
+        <h2 class="screen-reader-only">Contact me</h2>
+        <h3 class="contact__title">Let's talk!</h3>
         <form method="POST" action="https://europe-west1-sodnarts-react.cloudfunctions.net/api/email" class="contact__container">
-            <input type="text" id="name" name="name" autocomplete="off" class="contact__input-field" placeholder="Name">
-            <input type="email" id="email" name="email" autocomplete="email" class="contact__input-field" placeholder="E-Mail">
-            <input type="text" id="subject" name="subject" autocomplete="off" class="contact__input-field" placeholder="Subject">
-            <textarea type="text" id="message" name="message" class="contact__input-field contact__input-field--multi-line" placeholder="Message"></textarea>
-            <button class="animated-btn animated-button-lined animated-button-lined--green" type="submit"  >Send</button>
+            <div class="contact__input--container">
+                <input type="text" id="name" name="name" autocomplete="off" class="contact__input-field" required placeholder=" ">
+                <label for="name" class="contact__input--label">Name</label>
+            </div>
+            <div class="contact__input--container">
+                <input type="email" id="email" name="email" autocomplete="email" class="contact__input-field" required placeholder=" ">
+                <label for="email" class="contact__input--label">Email</label>
+            </div>
+            <div class="contact__input--container">
+                <input type="text" id="subject" name="subject" autocomplete="off" class="contact__input-field" required placeholder=" ">
+                <label for="subject" class="contact__input--label">Subject</label>
+            </div>
+            <div class="contact__input--container">
+                <textarea type="text" id="message" name="message" class="contact__input-field contact__input-field--multi-line" required placeholder=" "></textarea>
+                <label for="message" class="contact__input--label contact__input--label--text-area">Message</label>
+            </div>
+            <button class="animated-btn animated-button-lined animated-button-lined--green" type="submit">Send</button>
         </form>
     </section>
-    <footer>
+
+    <footer class="page-content">
         <ul class="footer__box--icons">
-            <li><a href="https://facebook.com/glennrobert.strandos/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
             <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
             <li><a href="https://linkedin.com/in/glenn-robert-strandos-951618156/" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
             <li><a href="https://github.com/Sodnarts" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li>

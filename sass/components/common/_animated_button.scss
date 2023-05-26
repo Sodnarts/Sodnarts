@@ -3,7 +3,7 @@
     padding: 1.4rem 4rem;
     padding-right: 3.1rem;
     font-size: 1.4rem;
-    color: $header-button-color-background;
+    color: var(--header-button-color-background);
     letter-spacing: 1.1rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -11,6 +11,8 @@
     cursor: pointer;
     user-select: none;
     overflow: hidden;
+    outline: none;
+    
 
     &:before,
     &:after {
@@ -20,17 +22,17 @@
         z-index: -1;
     }
 
-    &:hover {
-        color: $header-button-color-text;
+    &:hover, &:focus {
+        color: var(--header-button-color-text);
         transition-delay: 0.5s;
     }
 
-    &:hover:before {
+    &:hover:before, &:focus:before {
         transition-delay: 0s;
     }
 
-    &:hover:after {
-        background: $header-button-color-background;
+    &:hover:after, &:focus:after {
+        background: var(--header-button-color-background);
         transition-delay: 0.35s;
     }
 
@@ -43,7 +45,7 @@
 
     &:before {
         top: 0;
-        border: 1px solid $header-button-color-background;
+        border: 1px solid var(--header-button-color-background);
         border-top: 0;
         border-bottom: 0;
     }
@@ -54,30 +56,28 @@
     }
 
     &:hover:before,
-    &:hover:after {
+    &:hover:after,
+    &:focus:before,
+    &:focus:after {
         height: 100%;
     }
 
-    //&--selected {
-    //    border-bottom: 1px solid #ffffff99;
-    //}
-
     // Dark button
     &--dark {
-        color: $header-button-color-text;
+        color: var(--header-button-color-text);
     }
 
-    &--dark:hover {
-        color: $header-button-color-background;
+    &--dark:hover, &--dark:focus {
+        color: var(--header-button-color-background);
     }
 
-    &--dark:hover:after {
-        background: linear-gradient(to right, $header-button-color-text, #111);
+    &--dark:hover:after, &--dark:focus:after {
+        background: linear-gradient(to right, var(--header-button-color-text), #111);
     }
 
     &--dark:before {
         top: 0;
-        border: 1px solid $header-button-color-text;
+        border: 1px solid var(--header-button-color-text);
         border-top: 0;
         border-bottom: 0;
     }

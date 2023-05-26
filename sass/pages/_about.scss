@@ -3,6 +3,8 @@
     width: 100%;
     min-height: calc(100vh);
     padding: 6rem;
+    background-color: var(--background-color);
+    z-index: 0;
 
     &__container {
         display: flex;

@@ -1,44 +1,50 @@
 .animated-button-lined {
     border: none;
     background: transparent;
-    color: $color-white;
-    border-top: 1px solid $color-white;
-    border-bottom: 1px solid $color-white;
+    color: var(--color-white);
+    border-top: 1px solid var(--color-white);
+    border-bottom: 1px solid var(--color-white);
     margin-top: 4rem;
     width: 30%;
     min-width: 20rem;
+    max-width: 48rem;
     margin: 4rem auto 0 auto;
 
-    &:hover {
-        color: #222;
+    &:hover, &:focus {
+        color: var(--background-color);
         transition-delay: 0.5s;
+        border-color: var(--color-button-lined);
     }
 
-    &:hover:after {
-        background: $color-white;
+    &:hover:after, &:focus:after {
+        background: var(--color-button-lined);
         transition-delay: 0.35s;
     }
 
     &:before {
         top: 0;
-        border: 1px solid $color-white;
+        border: 1px solid var(--color-button-lined);
         border-top: 0;
         border-bottom: 0;
     }
 
     &--green {
-        color: $color-primary;
-        border-top: 1px solid $color-primary;
-        border-bottom: 1px solid $color-primary;
+        color: var(--color-white);
+        border-top: 1px solid var(--color-grey-dark-2);
+        border-bottom: 1px solid var(--color-grey-dark-2);
 
-        &:hover:after {
-            background: $color-primary;
-            transition-delay: 0.35s;
+        &:hover, &:focus {
+            border-color: var(--color-primary);
         }
 
+        &:hover:after, &:focus:after {
+            background: var(--color-primary);
+            transition-delay: 0.35s;
+        }
+        
         &:before {
             top: 0;
-            border: 1px solid $color-primary;
+            border: 1px solid var(--color-primary);
             border-top: 0;
             border-bottom: 0;
         }

@@ -1,0 +1,168 @@
+.theme-switch {
+  &__star {
+    position: absolute;
+    
+    display: inline-block;
+    width: 0;
+    height: 0;
+    
+    margin-left: 0.45em;
+    margin-right: 0.45em;
+    margin-bottom: 0.6em;
+    
+    border-right:  0.15em solid transparent;
+    border-bottom: 0.35em  solid white;
+    border-left:   0.15em solid transparent;
+  
+    /* Controlls the size of the stars. */
+    font-size: 24px;
+    animation: rotate 10s linear alternate infinite ;
+  
+    
+    &:before, &:after {
+      content: '';
+      
+      display: block;
+      width: 0;
+      height: 0;
+      
+      position: absolute;
+      top: 0.3em;
+      left: -0.5em;
+    
+      border-right:  0.5em solid transparent;
+      border-bottom: 0.35em  solid white;
+      border-left:   0.5em solid transparent;
+    
+      transform: rotate(-35deg);
+    }
+    
+    &:after {  
+      transform: rotate(35deg);
+    }
+
+    &--1 {
+      top: 3rem;
+      left: 2rem;
+      transform: scale(0.5) rotate(90deg);
+  }
+
+    &--2 {
+      top: 1rem;
+      left: 4rem;
+      transform: scale(0.4) rotate(0);
+    }
+
+    &--3 {
+      top: 4.4rem;
+      left: 3.4rem;
+      transform: scale(0.4) rotate(180deg);
+    }
+
+    &--4 {
+      top: 0.8rem;
+      left: 1.6rem;
+      transform: scale(0.3) rotate(0);
+    }
+
+    &--5 {
+      top: 3.4rem;
+      left: 6rem;
+      transform: scale(0.6) rotate(45deg);
+    }
+
+    &--6 {
+      top: 0.6rem;
+      left: 6.4rem;
+      transform: scale(0.35) rotate(-45deg);
+    }
+
+    &--7 {
+      top: 1.8rem;
+      left: 7.8rem;
+      transform: scale(0.35) rotate(0);
+    }
+
+    &--8 {
+      top: 4.2rem;
+      left: 8.4rem;
+      transform: scale(0.4) rotate(-30deg);
+    }
+
+    &--9 {
+      top: 2.8rem;
+      left: 9.2rem;
+      transform: scale(0.5) rotate(-100deg);
+    }
+
+    &--10 {
+      top: 0.6rem;
+      left: 9rem;
+      transform: scale(0.3) rotate(0);
+    }
+
+    &--11 {
+      top: 1.2rem;
+      left: 10.8rem;
+      transform: scale(0.35) rotate(0);
+    }
+
+    &--12 {
+      top: 4rem;
+      left: 11.4rem;
+      transform: scale(0.45) rotate(0);
+    }
+
+    &--13 {
+      top: 2rem;
+      left: 12.4rem;
+      transform: scale(0.3) rotate(45deg);
+    }
+
+    &--14 {
+      top: 3rem;
+      left: 13rem;
+      transform: scale(0.4) rotate(-45deg);
+    }
+
+    &--15 {
+      top: 1rem;
+      left: 13.6rem;
+      transform: scale(0.25) rotate(-45deg);
+    }
+
+    &--16 {
+      top: 4.4rem;
+      left: 14rem;
+      transform: scale(0.5) rotate(-45deg);
+    }
+
+    &--17 {
+      top: 2.8rem;
+      left: 15.2rem;
+      transform: scale(0.25) rotate(-45deg);
+    }
+
+    &--18 {
+      top: 1.4rem;
+      left: 16.4rem;
+      transform: scale(0.25) rotate(-45deg);
+    }
+
+    &--19 {
+      top: 4.4rem;
+      left: 15.8rem;
+      transform: scale(0.325) rotate(-45deg);
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}

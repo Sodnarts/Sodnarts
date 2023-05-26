@@ -33,11 +33,11 @@
         letter-spacing: 0.2rem;
 
         & span {
-            background: #444;
+            background: var(--color-code-block);
             font-size: 1.4rem;
             font-weight: 400;
-            border-radius: 0.8rem;
-            color: $color-primary-light;
+            border-radius: 0.6rem;
+            color: var(--color-secondary-dark);
             padding: 0.4rem 0.4rem;
 
             @include respond(phone) {

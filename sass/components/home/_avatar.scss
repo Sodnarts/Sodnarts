@@ -4,10 +4,10 @@
         left: 25%;
         width: 40rem; //30rem; original
         height: 45rem; //34rem; original
-        background: $color-black;
-        border-radius: 1.5rem;
+        background: black;
+        border-radius: 1.6rem;
         overflow: hidden;
-        box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.9);
+        box-shadow: var(--avatar-box-shadow);
         transform: translate(-60%, -50%);
         opacity: 0;
         animation: fade-in-absolute-center 2s ease $typewriter-speed + 3.5s forwards;
@@ -20,7 +20,7 @@
             height: 100%;
             transition: 0.5s;
             z-index: 2;
-            background: $color-black;
+            background: black;
 
             &-img {
                 width: 40rem; //30rem; original
@@ -48,7 +48,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            background-color: $color-white;
+            background-color: white;
             z-index: 1;
             width: 100%;
             height: 10rem;
@@ -59,7 +59,7 @@
                 margin: 1rem 0 0;
                 padding: 0;
                 text-align: center;
-                color: $color-grey-dark-3;
+                color: #333;
                 font-size: 2rem;
                 font-family: 'Lato', sans-serif;
 

@@ -17,8 +17,7 @@
         align-items: center;
 
         & h2 {
-            color: $header-button-color-background;
-            border-radius: 4rem;
+            color: var(--header-button-color-background);
             text-align: center;
             padding: 0.5rem 2rem;
             font-size: 3rem;
@@ -35,13 +34,14 @@
         &-tech {
             display: flex;
         }
+
         & p {
-            color: #eee;
-            border-radius: 0.5rem;
+            color: var(--color-grey-light);
+            border-radius: 0.6rem;
             font-weight: 300;
             margin: 0 1rem;
             padding: 0rem 1rem;
-            background: #333;
+            background: var(--color-bagde);
             font-size: 1.6rem;
             transition: 0.8s ease-out;
             transform: translateY(22rem);
@@ -49,7 +49,6 @@
         }
 
         &-btn-container {
-            background: #222;
             transition: 0.8s ease-out;
             transform: translateY(20rem);
             transition-delay: 0s;
@@ -58,21 +57,9 @@
                 transform: translateY(-4.2rem);
             }
         }
-        &-btn {
-            @include respond(tab-port) {
-                background: $header-button-color-background;
-                border-radius: 1rem;
-                color: $header-button-color-text;
-
-                &::before,
-                &::after {
-                    opacity: 0;
-                }
-            }
-        }
     }
 
-    .card:hover &--details {
+    .card:hover &--details, .card:focus &--details {
         opacity: 1;
 
         & h2 {

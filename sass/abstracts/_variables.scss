@@ -1,30 +1,108 @@
+:root {
+  --color-primary: #55c57a;
+  --color-primary-60: #55c57a60;
+  --color-primary-light: #7ed56f;
+
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+
+  --background-color: #222;
+
+  --color-grey-light: #eee;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-tag-cloud: #888;
+  --color-bagde: var(--color-grey-dark-3);
+  --color-code-block: #444;
+  --color-button-lined: var(--color-white);
+  --color-footer: var(--background-color);
+  --color-inline-link: var(--color-grey-light);
+
+  --header-button-color-text: var(--color-grey-dark-3);
+  --header-button-color-background: var(--color-white);
+
+  --avatar-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.9);
+}
+
+// DARK THEME COLORS
+.theme-switch__checkbox:checked ~ .page-content {
+  --color-primary: #55c57a;
+  --color-primary-60: #55c57a60;
+  --color-primary-light: #7ed56f;
+
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+
+  --background-color: #222;
+
+  --color-grey-light: #eee;
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-tag-cloud: #888;
+  --color-bagde: var(--color-grey-dark-3);
+  --color-code-block: #444;
+  --color-button-lined: var(--color-white);
+  --color-footer: var(--background-color);
+  --color-inline-link: var(--color-grey-light);
+
+  --header-button-color-text: var(--color-grey-dark-3);
+  --header-button-color-background: var(--color-white);
+
+  --avatar-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.9);
+}
+
+// LIGHT THEME COLORS
+.theme-switch__checkbox:not(:checked) ~ .page-content {
+  --color-primary: #55c57a;
+  --color-primary-60: #55c57a60;
+  --color-primary-light: #7ed56f;
+
+  --color-secondary-light: #ffb900;
+  --color-secondary-dark: #ff7730;
+
+  --color-tertiary-light: #2998ff;
+  --color-tertiary-dark: #5643fa;
+  
+  --background-color: #fff;
+
+  --color-grey-light: #111;
+  --color-grey-dark: #888;
+  --color-grey-dark-2: #666;
+  --color-grey-dark-3: #eee;
+
+  --color-white: #000;
+  --color-black: #fff;
+
+  --color-tag-cloud: #bbb;
+  --color-bagde: var(--color-secondary-light);
+  --color-code-block: #eee;
+  --color-button-lined: var(--color-primary);
+  --color-footer: #333;
+  --color-inline-link: var(--color-grey-light);
+
+  --header-button-color-text: var(--color-grey-dark-3);
+  --header-button-color-background: var(--color-white);
+
+  --avatar-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.35);
+}
+
 // COLORS
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
-
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
-
-$color-white: #fff;
-$color-black: #000;
-
-$header-button-color-text: $color-grey-dark-3;
-$header-button-color-background: $color-white;
-
-// $header-button-color-text: #222;
-// $header-button-color-background: $color-primary;
-
 $color-facebook: #4267b2;
 $color-twitter: #1da1f2;
 $color-mail: #ff5141;
@@ -42,7 +120,6 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 // TYPEWRITER
-$background-color: #222;
 $typewriter-speed: 6;
 $typewriter-characters: 24;
 

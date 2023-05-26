@@ -1,0 +1,250 @@
+.theme-switch {
+  &__container {
+    position: fixed;
+    top: 0.8rem;
+    left: 1.2rem;
+    width: 24rem;
+    height: 6.4rem;
+    min-height: 6.4rem;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    border-radius: 5rem;
+    background: linear-gradient(to right, #111 0%, #333 60%);
+    padding: 1px;
+    cursor: pointer;
+    z-index: 3000;
+
+    @include respond (tab-port) {
+      position: relative;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    width: 5.8rem;
+    height: 5.8rem;
+    background-color: #ffef57;
+    border-radius: 5rem;
+    box-shadow: 0 0 35px 4px #ffffff;
+    
+    &-sun {
+      animation: toSun 0.3s linear forwards;
+    }
+    
+    &-moon {
+      animation: toMoon 0.3s linear forwards;
+    }
+
+    @include respond (tab-port) {
+      top: 0px;
+    }
+  }
+
+  &__sky {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(to right, #008eff 10%, #8ad0ff 60%);
+
+    &-active {
+      animation: skyToSun 0.3s linear forwards
+    }
+
+    &-inactive {
+      animation: skyToMoon 0.3s linear forwards
+    }
+  }
+  
+  &__overlay {
+    position: absolute;
+    width: 5.8rem;
+    height: 5.8rem;
+    top: 2px;
+    left: -8rem;
+    background-color: black;
+    border-radius: 5rem;
+
+    &-moon {
+      animation: overlayToMoon 0.3s linear forwards
+    }
+
+    &-sun {
+      animation: overlayToSun 0.3s linear forwards
+    }
+  }
+
+  &__stars {
+    &-active {
+      animation: starsToMoon 0.3s linear forwards
+    }
+    &-inactive {
+      animation: starsToSun 0.3s linear forwards
+    }
+  }
+
+  &__clouds {
+    &-active {
+      animation: cloudsToMoon 0.3s linear forwards
+    }
+    &-inactive {
+      animation: cloudsToSun 0.3s linear forwards
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ main &__container &__circle {
+    animation: toMoon 0.3s linear forwards;
+  }
+
+  &__checkbox:checked ~ main &__container &__sky {
+    animation: skyToMoon 0.3s linear forwards
+  }
+
+  &__checkbox:checked ~ main &__container &__overlay {
+    animation: overlayToMoon 0.3s linear forwards
+  }
+
+  &__checkbox:checked ~ main &__container &__stars {
+    animation: starsToMoon 0.3s linear forwards
+  }
+
+  &__checkbox:checked ~ main &__container &__clouds {
+    animation: cloudsToMoon 0.3s linear forwards
+  }
+
+
+  &__checkbox:not(:checked) ~ main &__container &__circle {
+    animation: toSun 0.3s linear forwards;
+  }
+
+  &__checkbox:not(:checked) ~ main &__container &__sky {
+    animation: skyToSun 0.3s linear forwards
+  }
+
+  &__checkbox:not(:checked) ~ main &__container &__overlay {
+    animation: overlayToSun 0.3s linear forwards
+  }
+
+  &__checkbox:not(:checked) ~ main &__container &__stars {
+    animation: starsToSun 0.3s linear forwards
+  }
+
+  &__checkbox:not(:checked) ~ main &__container &__clouds {
+    animation: cloudsToSun 0.3s linear forwards
+  }
+}
+
+@keyframes toMoon {
+  from {
+    transform: translateX(0);
+    background: linear-gradient(to right, #fff8aa 30%, #fffcdd);
+    box-shadow: 0 0 35px 4px white;
+
+  }
+  to {
+    transform: translateX(302%);
+    background-color: #ffffff;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.68),
+    inset 0px -1px 10px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes toSun {
+  from {    
+    transform: translateX(302%);
+    background-color: #ffffff;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.68),
+    inset 0px -1px 10px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    transform: translateX(0%);
+    background: linear-gradient(to right, #fff8aa 30%, #fffcdd);
+    box-shadow: 0 0 35px 4px white;
+  }
+}
+
+
+@keyframes skyToSun {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes skyToMoon {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes starsToMoon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes starsToSun {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes cloudsToMoon {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes cloudsToSun {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayToMoon {
+  from {
+    transform: translateX(0);
+    background: #008eff;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(410%);
+    background-color: #333;
+    opacity: 1;
+  }
+}
+
+@keyframes overlayToSun {
+  from {
+    transform: translateX(410%);
+    background-color: #333;
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    background-color: #008eff;
+    opacity: 0;
+  }
+}
